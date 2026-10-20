@@ -72,6 +72,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnop\"\n8",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"abcdefghijklmn\"\n7",
+      "expectedOutput": "7"
+    },
+    {
       "input": "\"abc\"\n2",
       "expectedOutput": "1"
     },
@@ -142,14 +150,6 @@
     {
       "input": "\"abcde\"\n2",
       "expectedOutput": "3"
-    },
-    {
-      "input": "\"edcba\"\n2",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "\"aab\"\n2",
-      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

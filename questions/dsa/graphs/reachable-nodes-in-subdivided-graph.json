@@ -87,10 +87,6 @@
       "expectedOutput": "1"
     },
     {
-      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n0\n3",
-      "expectedOutput": "1"
-    },
-    {
       "input": "[[0,1,10],[0,2,1],[1,2,2]]\n1\n3",
       "expectedOutput": "3"
     },
@@ -123,14 +119,6 @@
       "expectedOutput": "16"
     },
     {
-      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n-1\n3",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n-2\n3",
-      "expectedOutput": "0"
-    },
-    {
       "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n2",
       "expectedOutput": "13"
     },
@@ -153,6 +141,18 @@
     {
       "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n8",
       "expectedOutput": "13"
+    },
+    {
+      "input": "[[0,1,4],[1,2,6],[0,2,8],[1,3,1]]\n1\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[0,1,4],[1,2,6],[0,2,8],[1,3,1]]\n2\n4",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[[0,1,4],[1,2,6],[0,2,8],[1,3,1]]\n3\n4",
+      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

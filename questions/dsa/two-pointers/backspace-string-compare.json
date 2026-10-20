@@ -70,6 +70,22 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"vutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "false"
+    },
+    {
       "input": "\"ab#c\"\n\"ad#c\"",
       "expectedOutput": "true"
     },
@@ -131,22 +147,6 @@
     },
     {
       "input": "\"aaaaa\"\n\"ad#c\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"abcde\"\n\"ad#c\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"edcba\"\n\"ad#c\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aab\"\n\"ad#c\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aA\"\n\"ad#c\"",
       "expectedOutput": "false"
     }
   ],

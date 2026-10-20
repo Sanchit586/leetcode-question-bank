@@ -113,10 +113,6 @@
       "expectedOutput": "182"
     },
     {
-      "input": "-12\n5\n4",
-      "expectedOutput": "999999993"
-    },
-    {
       "input": "0\n5\n4",
       "expectedOutput": "154"
     },
@@ -141,12 +137,16 @@
       "expectedOutput": "225"
     },
     {
-      "input": "-1\n5\n4",
-      "expectedOutput": "1000000002"
+      "input": "20\n5\n4",
+      "expectedOutput": "450"
     },
     {
-      "input": "-2\n5\n4",
-      "expectedOutput": "1000000003"
+      "input": "50\n5\n4",
+      "expectedOutput": "840"
+    },
+    {
+      "input": "100\n5\n4",
+      "expectedOutput": "1650"
     }
   ],
   "sqlSchema": null,

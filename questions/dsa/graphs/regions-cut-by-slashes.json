@@ -74,6 +74,14 @@
   ],
   "testCases": [
     {
+      "input": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\",\"epsilon28\",\"zeta29\"]",
+      "expectedOutput": "2776"
+    },
+    {
+      "input": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\"]",
+      "expectedOutput": "2377"
+    },
+    {
       "input": "[\" /\",\"/ \"]",
       "expectedOutput": "2"
     },
@@ -144,14 +152,6 @@
     {
       "input": "[\" /\",\"  \",\" /\",\"  \"]",
       "expectedOutput": "29"
-    },
-    {
-      "input": "[\"\\\\/\",\"/\\\\\"]",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "[\"/\\\\\",\"/\\\\\"]",
-      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

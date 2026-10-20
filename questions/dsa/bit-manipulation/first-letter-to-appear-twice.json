@@ -62,6 +62,26 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"(\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
       "input": "\"abccbaacz\"",
       "expectedOutput": "\"c\""
     },
@@ -120,26 +140,6 @@
     {
       "input": "\"121\"",
       "expectedOutput": "\"1\""
-    },
-    {
-      "input": "\"racecar\"",
-      "expectedOutput": "\"c\""
-    },
-    {
-      "input": "\"hello\"",
-      "expectedOutput": "\"l\""
-    },
-    {
-      "input": "\"leetcode\"",
-      "expectedOutput": "\"e\""
-    },
-    {
-      "input": "\"cdd\"",
-      "expectedOutput": "\"d\""
-    },
-    {
-      "input": "\"ddcba\"",
-      "expectedOutput": "\"d\""
     }
   ],
   "sqlSchema": null,

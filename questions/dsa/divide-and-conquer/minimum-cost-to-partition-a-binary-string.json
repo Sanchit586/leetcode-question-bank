@@ -142,12 +142,12 @@
       "expectedOutput": "16"
     },
     {
-      "input": "\"1010\"\n-1\n1",
-      "expectedOutput": "-8"
+      "input": "\"1010\"\n2\n0",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"1010\"\n-2\n1",
-      "expectedOutput": "-16"
+      "input": "\"1010\"\n2\n2",
+      "expectedOutput": "8"
     }
   ],
   "sqlSchema": null,

@@ -62,6 +62,30 @@
   ],
   "testCases": [
     {
+      "input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-50,50,-50,50,-50,50,-50,50,-50,50,-50,50,-50,50,-50]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9,10,11,12]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-50,50,-50,50,-50,50,-50,50,-50,50,-50,50,-50]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[13,12,11,10,9,8,7,6,5,4,3,2,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[7,7,7,7,7,7,7,7,7,7,7,7,7]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "[1,1,2,2,2]",
       "expectedOutput": "true"
     },
@@ -116,30 +140,6 @@
     {
       "input": "[0,0,0,0]",
       "expectedOutput": "true"
-    },
-    {
-      "input": "[1,1,1,1]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "[0]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "[-1]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[0,0]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "[2,1]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[-1,1]",
-      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

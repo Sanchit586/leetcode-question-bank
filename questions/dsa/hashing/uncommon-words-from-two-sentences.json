@@ -62,6 +62,22 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "[\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\",\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"]"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"vutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "[\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\",\"vutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"]"
+    },
+    {
       "input": "\"this apple is sweet\"\n\"this apple is sour\"",
       "expectedOutput": "[\"sweet\",\"sour\"]"
     },
@@ -124,22 +140,6 @@
     {
       "input": "\"aaaaa\"\n\"this apple is sour\"",
       "expectedOutput": "[\"aaaaa\",\"this\",\"apple\",\"is\",\"sour\"]"
-    },
-    {
-      "input": "\"abcde\"\n\"this apple is sour\"",
-      "expectedOutput": "[\"abcde\",\"this\",\"apple\",\"is\",\"sour\"]"
-    },
-    {
-      "input": "\"edcba\"\n\"this apple is sour\"",
-      "expectedOutput": "[\"edcba\",\"this\",\"apple\",\"is\",\"sour\"]"
-    },
-    {
-      "input": "\"aab\"\n\"this apple is sour\"",
-      "expectedOutput": "[\"aab\",\"this\",\"apple\",\"is\",\"sour\"]"
-    },
-    {
-      "input": "\"aA\"\n\"this apple is sour\"",
-      "expectedOutput": "[\"aA\",\"this\",\"apple\",\"is\",\"sour\"]"
     }
   ],
   "sqlSchema": null,

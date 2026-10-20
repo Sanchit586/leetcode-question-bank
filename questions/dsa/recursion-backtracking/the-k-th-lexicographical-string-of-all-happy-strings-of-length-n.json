@@ -68,6 +68,10 @@
   ],
   "testCases": [
     {
+      "input": "50\n25",
+      "expectedOutput": "\"ababababababababababababababababababababababacbaba\""
+    },
+    {
       "input": "1\n3",
       "expectedOutput": "\"c\""
     },
@@ -142,10 +146,6 @@
     {
       "input": "4\n4",
       "expectedOutput": "\"abcb\""
-    },
-    {
-      "input": "5\n4",
-      "expectedOutput": "\"abacb\""
     }
   ],
   "sqlSchema": null,

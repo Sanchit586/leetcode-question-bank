@@ -70,8 +70,32 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxy\"",
+      "expectedOutput": "[\"abcdefghijklmnopqrstuvwxy\"]"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()(\"",
+      "expectedOutput": "[\"()()()()()()()()()()()()\"]"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvw\"",
+      "expectedOutput": "[\"abcdefghijklmnopqrstuvw\"]"
+    },
+    {
+      "input": "\"()()()()()()()()()()()(\"",
+      "expectedOutput": "[\"()()()()()()()()()()()\"]"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "[\"aaaaaaaaaaaaaaaaaaaaaaa\"]"
+    },
+    {
+      "input": "\"abababababababababababa\"",
+      "expectedOutput": "[\"abababababababababababa\"]"
+    },
+    {
       "input": "\"()())()\"",
-      "expectedOutput": "[\"()()()\",\"(())()\"]"
+      "expectedOutput": "[\"(())()\",\"()()()\"]"
     },
     {
       "input": "\"(a)())()\"",
@@ -103,7 +127,7 @@
     },
     {
       "input": "\"()())()()())()\"",
-      "expectedOutput": "[\"()(()()())()\",\"()()()(())()\",\"(())()()()()\",\"(()()()())()\",\"()()()()()()\",\"(())(()())()\",\"()()(()())()\",\"(())()(())()\"]"
+      "expectedOutput": "[\"()()()()()()\",\"(())(()())()\",\"()()()(())()\",\"()()(()())()\",\"(()()()())()\",\"(())()()()()\",\"()(()()())()\",\"(())()(())()\"]"
     },
     {
       "input": "\"((((((\"",
@@ -111,7 +135,7 @@
     },
     {
       "input": "\"()())())())()(\"",
-      "expectedOutput": "[\"(()()())()\",\"()(()())()\",\"()()()()()\",\"(())()()()\",\"()(())()()\",\"(())(())()\",\"(()())()()\",\"((())())()\",\"()()(())()\"]"
+      "expectedOutput": "[\"(())(())()\",\"(()())()()\",\"()(()())()\",\"(())()()()\",\"((())())()\",\"()(())()()\",\"()()(())()\",\"()()()()()\",\"(()()())()\"]"
     },
     {
       "input": "\"a\"",
@@ -124,30 +148,6 @@
     {
       "input": "\"aa\"",
       "expectedOutput": "[\"aa\"]"
-    },
-    {
-      "input": "\"ab\"",
-      "expectedOutput": "[\"ab\"]"
-    },
-    {
-      "input": "\"ba\"",
-      "expectedOutput": "[\"ba\"]"
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "[\"aba\"]"
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "[\"abba\"]"
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "[\"aaaaa\"]"
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "[\"abcde\"]"
     }
   ],
   "sqlSchema": null,

@@ -118,14 +118,6 @@
       "expectedOutput": "0.9"
     },
     {
-      "input": "-1\n1\n10",
-      "expectedOutput": "-0.1"
-    },
-    {
-      "input": "-2\n1\n10",
-      "expectedOutput": "-0.2"
-    },
-    {
       "input": "10\n0\n10",
       "expectedOutput": "1"
     },
@@ -148,6 +140,14 @@
     {
       "input": "10\n6\n10",
       "expectedOutput": "0.80526"
+    },
+    {
+      "input": "10\n1\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "10\n1\n2",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

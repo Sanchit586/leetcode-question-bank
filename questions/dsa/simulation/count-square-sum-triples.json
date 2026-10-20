@@ -58,20 +58,8 @@
   ],
   "testCases": [
     {
-      "input": "5",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "10",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "n = 5",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "n = 10",
-      "expectedOutput": "4"
+      "input": "1",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

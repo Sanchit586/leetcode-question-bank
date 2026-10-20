@@ -57,6 +57,30 @@
   ],
   "testCases": [
     {
+      "input": "20000",
+      "expectedOutput": "19001"
+    },
+    {
+      "input": "19999",
+      "expectedOutput": "19000"
+    },
+    {
+      "input": "4000",
+      "expectedOutput": "3001"
+    },
+    {
+      "input": "3999",
+      "expectedOutput": "3000"
+    },
+    {
+      "input": "3998",
+      "expectedOutput": "2999"
+    },
+    {
+      "input": "3997",
+      "expectedOutput": "2998"
+    },
+    {
       "input": "1002",
       "expectedOutput": "3"
     },
@@ -93,10 +117,6 @@
       "expectedOutput": "0"
     },
     {
-      "input": "-1002",
-      "expectedOutput": "0"
-    },
-    {
       "input": "0",
       "expectedOutput": "0"
     },
@@ -114,26 +134,6 @@
     },
     {
       "input": "4",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "5",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "-1",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "-2",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "-3",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "10",
       "expectedOutput": "0"
     }
   ],

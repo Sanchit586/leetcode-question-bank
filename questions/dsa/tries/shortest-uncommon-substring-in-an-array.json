@@ -63,6 +63,10 @@
   ],
   "testCases": [
     {
+      "input": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\",\"epsilon28\",\"zeta29\",\"eta30\",\"theta31\",\"alpha32\",\"beta33\",\"gamma34\",\"delta35\",\"epsilon36\",\"zeta37\",\"eta38\",\"theta39\",\"alpha40\",\"beta41\",\"gamma42\",\"delta43\",\"epsilon44\",\"zeta45\",\"eta46\",\"theta47\",\"alpha48\",\"beta49\"]",
+      "expectedOutput": "[\"a0\",\"\",\"\",\"\",\"\",\"a5\",\"a6\",\"a7\",\"a8\",\"a9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\",\"21\",\"22\",\"23\",\"24\",\"25\",\"26\",\"27\",\"28\",\"29\",\"30\",\"31\",\"32\",\"33\",\"34\",\"35\",\"36\",\"37\",\"38\",\"39\",\"40\",\"41\",\"42\",\"43\",\"44\",\"45\",\"46\",\"47\",\"48\",\"49\"]"
+    },
+    {
       "input": "[\"cab\",\"ad\",\"bad\",\"c\"]",
       "expectedOutput": "[\"ab\",\"\",\"ba\",\"\"]"
     },
@@ -137,10 +141,6 @@
     {
       "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
       "expectedOutput": "[\"at\",\"do\",\"ta\",\"go\",\"ct\"]"
-    },
-    {
-      "input": "[\"one\",\"two\",\"three\"]",
-      "expectedOutput": "[\"n\",\"w\",\"h\"]"
     }
   ],
   "sqlSchema": null,

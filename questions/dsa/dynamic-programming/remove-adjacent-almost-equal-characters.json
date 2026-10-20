@@ -69,6 +69,26 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "21"
+    },
+    {
       "input": "\"aaaaa\"",
       "expectedOutput": "2"
     },
@@ -127,26 +147,6 @@
     {
       "input": "\"edcba\"",
       "expectedOutput": "2"
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aA\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"0\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"121\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"racecar\"",
-      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

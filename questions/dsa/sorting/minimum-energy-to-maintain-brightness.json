@@ -119,14 +119,6 @@
       "expectedOutput": "14"
     },
     {
-      "input": "-1\n5\n[[6,12]]",
-      "expectedOutput": "14"
-    },
-    {
-      "input": "-2\n5\n[[6,12]]",
-      "expectedOutput": "14"
-    },
-    {
       "input": "5\n0\n[[6,12]]",
       "expectedOutput": "0"
     },
@@ -149,6 +141,14 @@
     {
       "input": "5\n6\n[[6,12]]",
       "expectedOutput": "14"
+    },
+    {
+      "input": "5\n7\n[[6,12]]",
+      "expectedOutput": "21"
+    },
+    {
+      "input": "5\n8\n[[6,12]]",
+      "expectedOutput": "21"
     }
   ],
   "sqlSchema": null,

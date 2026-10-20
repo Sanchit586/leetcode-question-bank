@@ -115,14 +115,6 @@
       "expectedOutput": "4"
     },
     {
-      "input": "[[1,1],[2,1],[1,1]]\n-1\n3\n3",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,1],[2,1],[1,1]]\n-2\n3\n3",
-      "expectedOutput": "4"
-    },
-    {
       "input": "[[1,1],[2,1],[1,1]]\n2\n0\n3",
       "expectedOutput": "inf"
     },
@@ -153,6 +145,14 @@
     {
       "input": "[[1,1],[2,1],[1,1]]\n2\n8\n3",
       "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,1],[2,1],[1,1]]\n2\n3\n0",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[[1,1],[2,1],[1,1]]\n2\n3\n1",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

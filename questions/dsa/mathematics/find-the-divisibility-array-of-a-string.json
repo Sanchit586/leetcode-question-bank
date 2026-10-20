@@ -138,8 +138,8 @@
       "expectedOutput": "[0,0,0,0,1,0,0,0,0]"
     },
     {
-      "input": "\"998244353\"\n-1",
-      "expectedOutput": "[1,1,1,1,1,1,1,1,1]"
+      "input": "\"10\"\n10",
+      "expectedOutput": "[0,1]"
     }
   ],
   "sqlSchema": null,

@@ -146,8 +146,8 @@
       "expectedOutput": "440"
     },
     {
-      "input": "2\n3\n-1\n2",
-      "expectedOutput": "0"
+      "input": "2\n3\n1\n0",
+      "expectedOutput": "120"
     }
   ],
   "sqlSchema": null,

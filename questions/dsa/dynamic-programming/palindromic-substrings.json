@@ -60,6 +60,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijkl\"",
+      "expectedOutput": "1000"
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "1500"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmn\"",
+      "expectedOutput": "300"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "22650"
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": "22650"
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "450"
+    },
+    {
       "input": "\"abc\"",
       "expectedOutput": "3"
     },
@@ -114,30 +138,6 @@
     {
       "input": "\"abba\"",
       "expectedOutput": "6"
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "15"
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "\"aA\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"0\"",
-      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

@@ -59,6 +59,30 @@
   ],
   "testCases": [
     {
+      "input": "1000",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "999",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "200",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "199",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "198",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "197",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
       "input": "60",
       "expectedOutput": "\"Red\""
     },
@@ -99,10 +123,6 @@
       "expectedOutput": "\"Orange\""
     },
     {
-      "input": "-60",
-      "expectedOutput": "\"Invalid\""
-    },
-    {
       "input": "0",
       "expectedOutput": "\"Green\""
     },
@@ -116,26 +136,6 @@
     },
     {
       "input": "3",
-      "expectedOutput": "\"Invalid\""
-    },
-    {
-      "input": "4",
-      "expectedOutput": "\"Invalid\""
-    },
-    {
-      "input": "-1",
-      "expectedOutput": "\"Invalid\""
-    },
-    {
-      "input": "-2",
-      "expectedOutput": "\"Invalid\""
-    },
-    {
-      "input": "-3",
-      "expectedOutput": "\"Invalid\""
-    },
-    {
-      "input": "10",
       "expectedOutput": "\"Invalid\""
     }
   ],

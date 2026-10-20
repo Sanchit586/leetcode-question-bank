@@ -99,10 +99,6 @@
       "expectedOutput": "3"
     },
     {
-      "input": "-1\n[1,2,3,4,5,6]",
-      "expectedOutput": "6"
-    },
-    {
       "input": "3\n[1,2,3]",
       "expectedOutput": "2"
     },
@@ -140,6 +136,10 @@
     },
     {
       "input": "3\n[2,3,4,5,6,7]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "3\n[0,1,2,3,4,5]",
       "expectedOutput": "4"
     }
   ],

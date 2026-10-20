@@ -130,19 +130,19 @@
       "expectedOutput": "4"
     },
     {
-      "input": "2\n-1",
-      "expectedOutput": "-2"
-    },
-    {
-      "input": "2\n-2",
-      "expectedOutput": "-4"
-    },
-    {
       "input": "0\n1",
       "expectedOutput": "0"
     },
     {
       "input": "0\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "0\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "0\n5",
       "expectedOutput": "0"
     }
   ],

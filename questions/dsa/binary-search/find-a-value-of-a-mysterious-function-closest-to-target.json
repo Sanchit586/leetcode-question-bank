@@ -84,72 +84,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "[9,12]\n5",
-      "expectedOutput": "3"
+      "input": "[9,12,3,7,15]\n9",
+      "expectedOutput": "0"
     },
     {
-      "input": "[3,7,15]\n5",
-      "expectedOutput": "2"
+      "input": "[15,7,3,12,9]\n9",
+      "expectedOutput": "0"
     },
     {
-      "input": "[9]\n5",
-      "expectedOutput": "4"
+      "input": "[9,12,3,7,15]\n15",
+      "expectedOutput": "0"
     },
     {
-      "input": "[9,15]\n5",
-      "expectedOutput": "4"
+      "input": "[15,7,3,12,9]\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[9,12,3,7,15]\n21",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[15,7,3,12,9]\n21",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[9,12,3,7,15]\n24",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[15,7,3,12,9]\n24",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[9,12,3,7,15]\n0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[15,7,3,12,9]\n0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[9,12,3,7,15]\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[15,7,3,12,9]\n1",
+      "expectedOutput": "1"
     },
     {
       "input": "[15,7,3,12,9]\n5",
       "expectedOutput": "2"
     },
     {
-      "input": "[3,7,9,12,15]\n5",
-      "expectedOutput": "2"
+      "input": "[9,12,3,7,15]\n46",
+      "expectedOutput": "31"
     },
     {
-      "input": "[15,12,9,7,3]\n5",
-      "expectedOutput": "2"
+      "input": "[15,7,3,12,9]\n46",
+      "expectedOutput": "31"
     },
     {
-      "input": "[9,9,9,9,9]\n5",
-      "expectedOutput": "4"
+      "input": "[1000000,1000000,1000000]\n1000000",
+      "expectedOutput": "0"
     },
     {
-      "input": "[9,12,3,7,15,9,12,3,7,15]\n5",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "[18,24,6,14,30]\n5",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "[10,13,4,8,16]\n5",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "[8,11,2,6,14]\n5",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "[-9,-12,-3,-7,-15]\n5",
-      "expectedOutput": "8"
-    },
-    {
-      "input": "[0,0,0,0]\n5",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "[1,1,1,1]\n5",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "[0]\n5",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "[1]\n5",
-      "expectedOutput": "4"
+      "input": "[1000000,1000000,1000000]\n2000000",
+      "expectedOutput": "1000000"
     }
   ],
   "sqlSchema": null,

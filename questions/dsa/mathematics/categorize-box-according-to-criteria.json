@@ -98,10 +98,6 @@
       "expectedOutput": "\"Heavy\""
     },
     {
-      "input": "-1000\n35\n700\n300",
-      "expectedOutput": "\"Heavy\""
-    },
-    {
       "input": "0\n35\n700\n300",
       "expectedOutput": "\"Heavy\""
     },
@@ -126,15 +122,19 @@
       "expectedOutput": "\"Heavy\""
     },
     {
-      "input": "-1\n35\n700\n300",
+      "input": "10\n35\n700\n300",
       "expectedOutput": "\"Heavy\""
     },
     {
-      "input": "-2\n35\n700\n300",
+      "input": "20\n35\n700\n300",
       "expectedOutput": "\"Heavy\""
     },
     {
-      "input": "-3\n35\n700\n300",
+      "input": "50\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "100\n35\n700\n300",
       "expectedOutput": "\"Heavy\""
     }
   ],

@@ -61,6 +61,14 @@
   ],
   "testCases": [
     {
+      "input": "1000\n500",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "200\n100",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
       "input": "10\n19",
       "expectedOutput": "[11,13]"
     },
@@ -107,14 +115,6 @@
     {
       "input": "9\n19",
       "expectedOutput": "[11,13]"
-    },
-    {
-      "input": "-1\n19",
-      "expectedOutput": "[2,3]"
-    },
-    {
-      "input": "-2\n19",
-      "expectedOutput": "[2,3]"
     },
     {
       "input": "10\n18",

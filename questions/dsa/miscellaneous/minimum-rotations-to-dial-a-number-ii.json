@@ -113,14 +113,6 @@
       "expectedOutput": "9"
     },
     {
-      "input": "-1\n\"1502\"",
-      "expectedOutput": "9"
-    },
-    {
-      "input": "-2\n\"1502\"",
-      "expectedOutput": "9"
-    },
-    {
       "input": "4\n\"15\"",
       "expectedOutput": "5"
     },
@@ -143,6 +135,14 @@
     {
       "input": "4\n\"1111\"",
       "expectedOutput": "1"
+    },
+    {
+      "input": "4\n\"15022051\"",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "4\n\"a\"",
+      "expectedOutput": "-39"
     }
   ],
   "sqlSchema": null,

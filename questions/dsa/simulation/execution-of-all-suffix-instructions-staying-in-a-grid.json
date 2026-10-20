@@ -115,14 +115,6 @@
       "expectedOutput": "[6,5,4,3,1,0]"
     },
     {
-      "input": "-1\n[0,1]\n\"RRDDLU\"",
-      "expectedOutput": "[0,0,0,0,0,0]"
-    },
-    {
-      "input": "-2\n[0,1]\n\"RRDDLU\"",
-      "expectedOutput": "[0,0,0,0,0,0]"
-    },
-    {
       "input": "3\n[1,0]\n\"RRDDLU\"",
       "expectedOutput": "[3,2,1,1,0,1]"
     },
@@ -149,6 +141,14 @@
     {
       "input": "3\n[1,1]\n\"RRDDLU\"",
       "expectedOutput": "[1,2,1,3,2,1]"
+    },
+    {
+      "input": "3\n[2,1]\n\"RRDDLU\"",
+      "expectedOutput": "[1,1,0,0,2,1]"
+    },
+    {
+      "input": "3\n[-1,1]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,4,2,0,0]"
     }
   ],
   "sqlSchema": null,

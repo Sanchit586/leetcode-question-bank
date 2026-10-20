@@ -59,6 +59,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": "1"
+    },
+    {
       "input": "\"Hello, my name is John\"",
       "expectedOutput": "5"
     },
@@ -112,30 +136,6 @@
     },
     {
       "input": "\"aba\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aA\"",
       "expectedOutput": "1"
     }
   ],

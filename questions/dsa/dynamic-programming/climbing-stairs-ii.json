@@ -116,14 +116,6 @@
       "expectedOutput": "13"
     },
     {
-      "input": "-1\n[1,2,3,4]",
-      "expectedOutput": "13"
-    },
-    {
-      "input": "-2\n[1,2,3,4]",
-      "expectedOutput": "13"
-    },
-    {
       "input": "4\n[1,2]",
       "expectedOutput": "5"
     },
@@ -146,6 +138,14 @@
     {
       "input": "4\n[1,1,1,1]",
       "expectedOutput": "8"
+    },
+    {
+      "input": "4\n[1,2,3,4,1,2,3,4]",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "4\n[2,4,6,8]",
+      "expectedOutput": "20"
     }
   ],
   "sqlSchema": null,

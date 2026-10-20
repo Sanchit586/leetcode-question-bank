@@ -78,6 +78,22 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"\n\"tsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "\"\""
+    },
+    {
       "input": "\"baba\"\n\"abba\"",
       "expectedOutput": "\"baab\""
     },
@@ -140,22 +156,6 @@
     {
       "input": "\"aaaaa\"\n\"abba\"",
       "expectedOutput": "\"\""
-    },
-    {
-      "input": "\"abcde\"\n\"abba\"",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "\"edcba\"\n\"abba\"",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "\"aab\"\n\"abba\"",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "\"racecar\"\n\"abba\"",
-      "expectedOutput": "\"acrerca\""
     }
   ],
   "sqlSchema": null,

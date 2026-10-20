@@ -68,6 +68,30 @@
   ],
   "testCases": [
     {
+      "input": "1000",
+      "expectedOutput": "\"M\""
+    },
+    {
+      "input": "999",
+      "expectedOutput": "\"CMXCIX\""
+    },
+    {
+      "input": "200",
+      "expectedOutput": "\"CC\""
+    },
+    {
+      "input": "199",
+      "expectedOutput": "\"CXCIX\""
+    },
+    {
+      "input": "198",
+      "expectedOutput": "\"CXCVIII\""
+    },
+    {
+      "input": "197",
+      "expectedOutput": "\"CXCVII\""
+    },
+    {
       "input": "3749",
       "expectedOutput": "\"MMMDCCXLIX\""
     },
@@ -108,10 +132,6 @@
       "expectedOutput": "\"MDCCCLXXIV\""
     },
     {
-      "input": "-3749",
-      "expectedOutput": "\"\""
-    },
-    {
       "input": "0",
       "expectedOutput": "\"\""
     },
@@ -126,26 +146,6 @@
     {
       "input": "3",
       "expectedOutput": "\"III\""
-    },
-    {
-      "input": "4",
-      "expectedOutput": "\"IV\""
-    },
-    {
-      "input": "5",
-      "expectedOutput": "\"V\""
-    },
-    {
-      "input": "-1",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "-2",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "-3",
-      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,

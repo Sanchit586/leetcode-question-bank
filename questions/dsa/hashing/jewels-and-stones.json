@@ -60,6 +60,22 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxy\"\n\"abcdefghijklmnopqrstuvwxy\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxy\"\n\"yxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "25"
+    },
+    {
       "input": "\"aA\"\n\"aAAbbbb\"",
       "expectedOutput": "3"
     },
@@ -122,22 +138,6 @@
     {
       "input": "\"abcde\"\n\"aAAbbbb\"",
       "expectedOutput": "5"
-    },
-    {
-      "input": "\"edcba\"\n\"aAAbbbb\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\"aab\"\n\"aAAbbbb\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\"0\"\n\"aAAbbbb\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"121\"\n\"aAAbbbb\"",
-      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -92,6 +92,50 @@
     {
       "input": "9",
       "expectedOutput": "33008"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "93120"
+    },
+    {
+      "input": "12",
+      "expectedOutput": "742408"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "5917360"
+    },
+    {
+      "input": "16",
+      "expectedOutput": "47167736"
+    },
+    {
+      "input": "18",
+      "expectedOutput": "375980768"
+    },
+    {
+      "input": "20",
+      "expectedOutput": "996985946"
+    },
+    {
+      "input": "22",
+      "expectedOutput": "889278831"
+    },
+    {
+      "input": "24",
+      "expectedOutput": "424033574"
+    },
+    {
+      "input": "26",
+      "expectedOutput": "890656453"
+    },
+    {
+      "input": "28",
+      "expectedOutput": "269866739"
+    },
+    {
+      "input": "30",
+      "expectedOutput": "586536780"
     }
   ],
   "sqlSchema": null,

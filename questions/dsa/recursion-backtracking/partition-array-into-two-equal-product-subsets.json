@@ -103,10 +103,6 @@
       "expectedOutput": "false"
     },
     {
-      "input": "[3,1,6,8,4,3,1,6,8,4]\n24",
-      "expectedOutput": "false"
-    },
-    {
       "input": "[6,2,12,16,8]\n24",
       "expectedOutput": "false"
     },
@@ -140,6 +136,10 @@
     },
     {
       "input": "[-1]\n24",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n24",
       "expectedOutput": "false"
     }
   ],

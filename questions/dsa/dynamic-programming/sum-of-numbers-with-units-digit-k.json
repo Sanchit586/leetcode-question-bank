@@ -70,6 +70,14 @@
   ],
   "testCases": [
     {
+      "input": "9\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "7\n3",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "58\n9",
       "expectedOutput": "2"
     },
@@ -114,10 +122,6 @@
       "expectedOutput": "1"
     },
     {
-      "input": "-58\n9",
-      "expectedOutput": "-1"
-    },
-    {
       "input": "0\n9",
       "expectedOutput": "0"
     },
@@ -142,11 +146,7 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "-1\n9",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "-2\n9",
+      "input": "10\n9",
       "expectedOutput": "-1"
     }
   ],

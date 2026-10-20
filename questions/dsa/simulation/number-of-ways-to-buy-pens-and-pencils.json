@@ -98,10 +98,6 @@
       "expectedOutput": "4"
     },
     {
-      "input": "-20\n10\n5",
-      "expectedOutput": "0"
-    },
-    {
       "input": "0\n10\n5",
       "expectedOutput": "1"
     },
@@ -126,16 +122,20 @@
       "expectedOutput": "2"
     },
     {
-      "input": "-1\n10\n5",
-      "expectedOutput": "0"
+      "input": "50\n10\n5",
+      "expectedOutput": "36"
     },
     {
-      "input": "-2\n10\n5",
-      "expectedOutput": "0"
+      "input": "100\n10\n5",
+      "expectedOutput": "121"
     },
     {
-      "input": "-3\n10\n5",
-      "expectedOutput": "0"
+      "input": "20\n1\n5",
+      "expectedOutput": "55"
+    },
+    {
+      "input": "20\n2\n5",
+      "expectedOutput": "29"
     }
   ],
   "sqlSchema": null,

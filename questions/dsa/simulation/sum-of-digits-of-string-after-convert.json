@@ -69,6 +69,10 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n25",
+      "expectedOutput": "3"
+    },
+    {
       "input": "\"iiii\"\n1",
       "expectedOutput": "36"
     },
@@ -143,10 +147,6 @@
     {
       "input": "\"hello\"\n1",
       "expectedOutput": "25"
-    },
-    {
-      "input": "\"leetcode\"\n1",
-      "expectedOutput": "33"
     }
   ],
   "sqlSchema": null,

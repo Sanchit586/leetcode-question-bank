@@ -58,6 +58,30 @@
   ],
   "testCases": [
     {
+      "input": "1000",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "999",
+      "expectedOutput": "[332,333,334]"
+    },
+    {
+      "input": "200",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "199",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "198",
+      "expectedOutput": "[65,66,67]"
+    },
+    {
+      "input": "197",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "33",
       "expectedOutput": "[10,11,12]"
     },
@@ -98,10 +122,6 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "-33",
-      "expectedOutput": "[-12,-11,-10]"
-    },
-    {
       "input": "0",
       "expectedOutput": "[-1,0,1]"
     },
@@ -116,26 +136,6 @@
     {
       "input": "3",
       "expectedOutput": "[0,1,2]"
-    },
-    {
-      "input": "5",
-      "expectedOutput": "[]"
-    },
-    {
-      "input": "-1",
-      "expectedOutput": "[]"
-    },
-    {
-      "input": "-2",
-      "expectedOutput": "[]"
-    },
-    {
-      "input": "-3",
-      "expectedOutput": "[-2,-1,0]"
-    },
-    {
-      "input": "10",
-      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

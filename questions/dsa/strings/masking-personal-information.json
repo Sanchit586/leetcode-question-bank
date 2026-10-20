@@ -68,6 +68,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmn\"",
+      "expectedOutput": "\"a*****mn\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"+-***-***-\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijkl\"",
+      "expectedOutput": "\"a*****kl\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"+-***-***-\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"a*****aa\""
+    },
+    {
+      "input": "\"ababababababababababababababababababab\"",
+      "expectedOutput": "\"a*****ab\""
+    },
+    {
       "input": "\"LeetCode@LeetCode.com\"",
       "expectedOutput": "\"l*****e@leetcode.com\""
     },
@@ -122,30 +146,6 @@
     {
       "input": "\"ba\"",
       "expectedOutput": "\"b*****ba\""
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "\"a*****ba\""
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "\"a*****ba\""
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "\"a*****aa\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"a*****de\""
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "\"e*****ba\""
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "\"a*****ab\""
     }
   ],
   "sqlSchema": null,

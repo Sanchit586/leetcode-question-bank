@@ -59,6 +59,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "false"
+    },
+    {
       "input": "\"abcde\"\n\"cdeab\"",
       "expectedOutput": "true"
     },
@@ -128,14 +136,6 @@
     },
     {
       "input": "\"0\"\n\"cdeab\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"121\"\n\"cdeab\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"racecar\"\n\"cdeab\"",
       "expectedOutput": "false"
     }
   ],

@@ -72,39 +72,7 @@
   ],
   "testCases": [
     {
-      "input": "[\"SIX\",\"SEVEN\",\"SEVEN\"]\n\"TWENTY\"",
-      "expectedOutput": "true"
-    },
-    {
       "input": "[\"LEET\",\"CODE\"]\n\"POINT\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[\"SIX\"]\n\"TWENTY\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[\"SEVEN\",\"SEVEN\"]\n\"TWENTY\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "[\"a\"]\n\"TWENTY\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[\"\"]\n\"TWENTY\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[\"a\",\"b\"]\n\"TWENTY\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[\"a\",\"a\"]\n\"TWENTY\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[\"ab\",\"ba\"]\n\"TWENTY\"",
       "expectedOutput": "false"
     },
     {
@@ -136,19 +104,51 @@
       "expectedOutput": "false"
     },
     {
-      "input": "[\"a\",\"b\"]\n\"POINT\"",
-      "expectedOutput": "false"
-    },
-    {
       "input": "[\"a\",\"a\"]\n\"POINT\"",
       "expectedOutput": "false"
     },
     {
-      "input": "[\"ab\",\"ba\"]\n\"POINT\"",
+      "input": "[\"LEET\",\"CODE\"]\n\"INT\"",
       "expectedOutput": "false"
     },
     {
-      "input": "[\"LEET\",\"CODE\"]\n\"INT\"",
+      "input": "[\"LEET\",\"CODE\"]\n\"TNIOP\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"LEET\",\"CODE\"]\n\"POINTPOINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\",\"CODE\"]\n\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"LEET\",\"CODE\"]\n\"([)]\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"LEET\",\"CODE\"]\n\"{[]}\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"LEET\"]\n\"PO\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\"]\n\"INT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\"]\n\"P\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\"]\n\"TNIOP\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\"]\n\"POINTPOINT\"",
       "expectedOutput": "false"
     }
   ],

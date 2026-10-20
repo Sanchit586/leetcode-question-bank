@@ -62,6 +62,22 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrst\"\n\"abcdefghijklmnopqrst\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrst\"\n\"tsrqponmlkjihgfedcba\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"abcdefghijklmnopqr\"\n\"abcdefghijklmnopqr\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcdefghijklmnopqr\"\n\"rqponmlkjihgfedcba\"",
+      "expectedOutput": "9"
+    },
+    {
       "input": "\"ab\"\n\"ba\"",
       "expectedOutput": "1"
     },

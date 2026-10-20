@@ -114,14 +114,6 @@
       "expectedOutput": "4"
     },
     {
-      "input": "-1\n1\n[2,3]\n[2]",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "-2\n1\n[2,3]\n[2]",
-      "expectedOutput": "4"
-    },
-    {
       "input": "2\n0\n[2,3]\n[2]",
       "expectedOutput": "4"
     },
@@ -146,11 +138,19 @@
       "expectedOutput": "4"
     },
     {
-      "input": "2\n-1\n[2,3]\n[2]",
+      "input": "2\n1\n[2]\n[2]",
       "expectedOutput": "4"
     },
     {
-      "input": "2\n-2\n[2,3]\n[2]",
+      "input": "2\n1\n[3]\n[2]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "2\n1\n[3,2]\n[2]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "2\n1\n[2,2]\n[2]",
       "expectedOutput": "4"
     }
   ],

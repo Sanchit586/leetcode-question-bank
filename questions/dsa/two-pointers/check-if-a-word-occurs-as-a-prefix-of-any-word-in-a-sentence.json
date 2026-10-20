@@ -71,6 +71,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "\"i love eating burger\"\n\"burg\"",
       "expectedOutput": "4"
     },
@@ -140,14 +148,6 @@
     },
     {
       "input": "\"abcde\"\n\"burg\"",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "\"edcba\"\n\"burg\"",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "\"aab\"\n\"burg\"",
       "expectedOutput": "-1"
     }
   ],

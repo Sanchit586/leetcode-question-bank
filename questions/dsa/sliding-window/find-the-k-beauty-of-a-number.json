@@ -60,6 +60,14 @@
   ],
   "testCases": [
     {
+      "input": "1000\n500",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "200\n100",
+      "expectedOutput": "0"
+    },
+    {
       "input": "240\n2",
       "expectedOutput": "2"
     },
@@ -100,10 +108,6 @@
       "expectedOutput": "2"
     },
     {
-      "input": "-240\n2",
-      "expectedOutput": "3"
-    },
-    {
       "input": "0\n2",
       "expectedOutput": "0"
     },
@@ -128,15 +132,11 @@
       "expectedOutput": "0"
     },
     {
-      "input": "-1\n2",
+      "input": "10\n2",
       "expectedOutput": "1"
     },
     {
-      "input": "-2\n2",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "-3\n2",
+      "input": "20\n2",
       "expectedOutput": "1"
     }
   ],

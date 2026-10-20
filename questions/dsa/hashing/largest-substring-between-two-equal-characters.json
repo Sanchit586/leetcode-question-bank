@@ -68,6 +68,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "48"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst\"",
+      "expectedOutput": "129"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "148"
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": "147"
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "148"
+    },
+    {
       "input": "\"aa\"",
       "expectedOutput": "0"
     },
@@ -122,30 +146,6 @@
     {
       "input": "\"aab\"",
       "expectedOutput": "0"
-    },
-    {
-      "input": "\"racecar\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\"hello\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"leetcode\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\"world\"",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "\"ca\"",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "\"acba\"",
-      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

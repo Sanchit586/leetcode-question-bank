@@ -67,6 +67,26 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "2"
+    },
+    {
       "input": "\"abbcccc\"",
       "expectedOutput": "5"
     },
@@ -124,26 +144,6 @@
     },
     {
       "input": "\"ba\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"edcba\"",
       "expectedOutput": "1"
     }
   ],

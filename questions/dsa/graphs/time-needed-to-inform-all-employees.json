@@ -99,14 +99,6 @@
       "expectedOutput": "0"
     },
     {
-      "input": "-1\n0\n[-1]\n[0]",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "-2\n0\n[-1]\n[0]",
-      "expectedOutput": "0"
-    },
-    {
       "input": "1\n1\n[-1]\n[0]",
       "expectedOutput": "0"
     },
@@ -127,23 +119,31 @@
       "expectedOutput": "0"
     },
     {
-      "input": "1\n-1\n[-1]\n[0]",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "1\n-2\n[-1]\n[0]",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "1\n-3\n[-1]\n[0]",
-      "expectedOutput": "0"
-    },
-    {
       "input": "1\n0\n[-1,-1]\n[0]",
       "expectedOutput": "0"
     },
     {
       "input": "1\n0\n[-2]\n[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n0\n[1]\n[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n0\n[1,2]\n[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n0\n[2,1]\n[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n0\n[1,1]\n[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n0\n[-1,1]\n[0]",
       "expectedOutput": "0"
     }
   ],

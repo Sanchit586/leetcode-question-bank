@@ -72,6 +72,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n25",
+      "expectedOutput": "\"y\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzab\"\n27",
+      "expectedOutput": "\"a\""
+    },
+    {
       "input": "\"leet2code3\"\n10",
       "expectedOutput": "\"o\""
     },
@@ -142,14 +150,6 @@
     {
       "input": "\"abba\"\n10",
       "expectedOutput": "\"b\""
-    },
-    {
-      "input": "\"aaaaa\"\n10",
-      "expectedOutput": "\"a\""
-    },
-    {
-      "input": "\"abcde\"\n10",
-      "expectedOutput": "\"e\""
     }
   ],
   "sqlSchema": null,

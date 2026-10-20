@@ -71,12 +71,76 @@
       "expectedOutput": "1"
     },
     {
-      "input": "left = \"4\", right = \"1000\"",
+      "input": "\"44\"\n\"1000\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"0\"\n\"1000\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"121\"\n\"1000\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"4\"\n\"10\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"4\"\n\"00\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"4\"\n\"1\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"4\"\n\"0001\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"4\"\n\"10001000\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"4\"\n\"1111\"",
       "expectedOutput": "4"
     },
     {
-      "input": "left = \"1\", right = \"2\"",
+      "input": "\"4\"\n\"10000001\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"4\"\n\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"4\"\n\"121\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"11\"\n\"2\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"0\"\n\"2\"",
       "expectedOutput": "1"
+    },
+    {
+      "input": "\"121\"\n\"2\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"1\"\n\"22\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"1\"\n\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"1\"\n\"121\"",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

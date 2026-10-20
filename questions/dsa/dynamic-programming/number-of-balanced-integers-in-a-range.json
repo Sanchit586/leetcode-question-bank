@@ -102,14 +102,6 @@
       "expectedOutput": "9"
     },
     {
-      "input": "-1\n100",
-      "expectedOutput": "9"
-    },
-    {
-      "input": "-2\n100",
-      "expectedOutput": "9"
-    },
-    {
       "input": "1\n99",
       "expectedOutput": "9"
     },
@@ -142,7 +134,15 @@
       "expectedOutput": "4"
     },
     {
-      "input": "1\n-100",
+      "input": "1\n0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n2",
       "expectedOutput": "0"
     }
   ],

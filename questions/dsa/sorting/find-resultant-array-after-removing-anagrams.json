@@ -62,6 +62,10 @@
   ],
   "testCases": [
     {
+      "input": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\",\"epsilon28\",\"zeta29\",\"eta30\",\"theta31\",\"alpha32\",\"beta33\",\"gamma34\",\"delta35\",\"epsilon36\",\"zeta37\",\"eta38\",\"theta39\",\"alpha40\",\"beta41\",\"gamma42\",\"delta43\",\"epsilon44\",\"zeta45\",\"eta46\",\"theta47\",\"alpha48\",\"beta49\"]",
+      "expectedOutput": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\",\"epsilon28\",\"zeta29\",\"eta30\",\"theta31\",\"alpha32\",\"beta33\",\"gamma34\",\"delta35\",\"epsilon36\",\"zeta37\",\"eta38\",\"theta39\",\"alpha40\",\"beta41\",\"gamma42\",\"delta43\",\"epsilon44\",\"zeta45\",\"eta46\",\"theta47\",\"alpha48\",\"beta49\"]"
+    },
+    {
       "input": "[\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]",
       "expectedOutput": "[\"abba\",\"cd\"]"
     },
@@ -136,10 +140,6 @@
     {
       "input": "[\"hello\",\"world\"]",
       "expectedOutput": "[\"hello\",\"world\"]"
-    },
-    {
-      "input": "[\"a\",\"b\",\"c\",\"d\"]",
-      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\"]"
     }
   ],
   "sqlSchema": null,

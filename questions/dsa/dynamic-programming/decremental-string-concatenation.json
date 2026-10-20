@@ -70,6 +70,10 @@
   ],
   "testCases": [
     {
+      "input": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\",\"epsilon28\",\"zeta29\",\"eta30\",\"theta31\",\"alpha32\",\"beta33\",\"gamma34\",\"delta35\",\"epsilon36\",\"zeta37\",\"eta38\",\"theta39\",\"alpha40\",\"beta41\",\"gamma42\",\"delta43\",\"epsilon44\",\"zeta45\",\"eta46\",\"theta47\",\"alpha48\",\"beta49\",\"gamma50\",\"delta51\",\"epsilon52\",\"zeta53\",\"eta54\",\"theta55\",\"alpha56\",\"beta57\",\"gamma58\",\"delta59\",\"epsilon60\",\"zeta61\",\"eta62\",\"theta63\",\"alpha64\",\"beta65\",\"gamma66\",\"delta67\",\"epsilon68\",\"zeta69\",\"eta70\",\"theta71\",\"alpha72\",\"beta73\",\"gamma74\",\"delta75\",\"epsilon76\",\"zeta77\",\"eta78\",\"theta79\",\"alpha80\",\"beta81\",\"gamma82\",\"delta83\",\"epsilon84\",\"zeta85\",\"eta86\",\"theta87\",\"alpha88\",\"beta89\",\"gamma90\",\"delta91\",\"epsilon92\",\"zeta93\",\"eta94\",\"theta95\",\"alpha96\",\"beta97\",\"gamma98\",\"delta99\",\"epsilon100\",\"zeta101\",\"eta102\",\"theta103\",\"alpha104\",\"beta105\",\"gamma106\",\"delta107\",\"epsilon108\",\"zeta109\",\"eta110\",\"theta111\",\"alpha112\",\"beta113\",\"gamma114\",\"delta115\",\"epsilon116\",\"zeta117\",\"eta118\",\"theta119\",\"alpha120\",\"beta121\",\"gamma122\",\"delta123\",\"epsilon124\",\"zeta125\",\"eta126\",\"theta127\",\"alpha128\",\"beta129\",\"gamma130\",\"delta131\",\"epsilon132\",\"zeta133\",\"eta134\",\"theta135\",\"alpha136\",\"beta137\",\"gamma138\",\"delta139\",\"epsilon140\",\"zeta141\",\"eta142\",\"theta143\",\"alpha144\",\"beta145\",\"gamma146\",\"delta147\",\"epsilon148\",\"zeta149\",\"eta150\",\"theta151\",\"alpha152\",\"beta153\",\"gamma154\",\"delta155\",\"epsilon156\",\"zeta157\",\"eta158\",\"theta159\",\"alpha160\",\"beta161\",\"gamma162\",\"delta163\",\"epsilon164\",\"zeta165\",\"eta166\",\"theta167\",\"alpha168\",\"beta169\",\"gamma170\",\"delta171\",\"epsilon172\",\"zeta173\",\"eta174\",\"theta175\",\"alpha176\",\"beta177\",\"gamma178\",\"delta179\",\"epsilon180\",\"zeta181\",\"eta182\",\"theta183\",\"alpha184\",\"beta185\",\"gamma186\",\"delta187\",\"epsilon188\",\"zeta189\",\"eta190\",\"theta191\",\"alpha192\",\"beta193\",\"gamma194\",\"delta195\",\"epsilon196\",\"zeta197\",\"eta198\",\"theta199\",\"alpha200\",\"beta201\",\"gamma202\",\"delta203\",\"epsilon204\",\"zeta205\",\"eta206\",\"theta207\",\"alpha208\",\"beta209\",\"gamma210\",\"delta211\",\"epsilon212\",\"zeta213\",\"eta214\",\"theta215\",\"alpha216\",\"beta217\",\"gamma218\",\"delta219\",\"epsilon220\",\"zeta221\",\"eta222\",\"theta223\",\"alpha224\",\"beta225\",\"gamma226\",\"delta227\",\"epsilon228\",\"zeta229\",\"eta230\",\"theta231\",\"alpha232\",\"beta233\",\"gamma234\",\"delta235\",\"epsilon236\",\"zeta237\",\"eta238\",\"theta239\",\"alpha240\",\"beta241\",\"gamma242\",\"delta243\",\"epsilon244\",\"zeta245\",\"eta246\",\"theta247\",\"alpha248\",\"beta249\",\"gamma250\",\"delta251\",\"epsilon252\",\"zeta253\",\"eta254\",\"theta255\",\"alpha256\",\"beta257\",\"gamma258\",\"delta259\",\"epsilon260\",\"zeta261\",\"eta262\",\"theta263\",\"alpha264\",\"beta265\",\"gamma266\",\"delta267\",\"epsilon268\",\"zeta269\",\"eta270\",\"theta271\",\"alpha272\",\"beta273\",\"gamma274\",\"delta275\",\"epsilon276\",\"zeta277\",\"eta278\",\"theta279\",\"alpha280\",\"beta281\",\"gamma282\",\"delta283\",\"epsilon284\",\"zeta285\",\"eta286\",\"theta287\",\"alpha288\",\"beta289\",\"gamma290\",\"delta291\",\"epsilon292\",\"zeta293\",\"eta294\",\"theta295\",\"alpha296\",\"beta297\",\"gamma298\",\"delta299\"]",
+      "expectedOutput": "2215"
+    },
+    {
       "input": "[\"aa\",\"ab\",\"bc\"]",
       "expectedOutput": "4"
     },
@@ -144,10 +148,6 @@
     {
       "input": "[\"hello\",\"world\"]",
       "expectedOutput": "10"
-    },
-    {
-      "input": "[\"a\",\"b\",\"c\",\"d\"]",
-      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

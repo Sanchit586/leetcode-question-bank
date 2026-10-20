@@ -120,14 +120,6 @@
       "expectedOutput": "true"
     },
     {
-      "input": "-1\n[[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "-2\n[[1,2],[2,3],[3,4],[4,2],[1,4],[2,5]]",
-      "expectedOutput": "true"
-    },
-    {
       "input": "0\n[[1,2],[3,4]]",
       "expectedOutput": "true"
     },
@@ -149,6 +141,14 @@
     },
     {
       "input": "6\n[[1,2],[3,4]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "7\n[[1,2],[3,4]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "8\n[[1,2],[3,4]]",
       "expectedOutput": "true"
     }
   ],

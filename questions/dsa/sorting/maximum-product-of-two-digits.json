@@ -67,6 +67,30 @@
   ],
   "testCases": [
     {
+      "input": "50",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "49",
+      "expectedOutput": "36"
+    },
+    {
+      "input": "54",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "53",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "52",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "51",
+      "expectedOutput": "5"
+    },
+    {
       "input": "31",
       "expectedOutput": "3"
     },
@@ -120,30 +144,6 @@
     },
     {
       "input": "2",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "3",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "4",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "5",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "10",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "20",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "50",
       "expectedOutput": "0"
     }
   ],

@@ -58,6 +58,10 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n25",
+      "expectedOutput": "false"
+    },
+    {
       "input": "\"aaabaaa\"\n3",
       "expectedOutput": "true"
     },
@@ -131,10 +135,6 @@
     },
     {
       "input": "\"aA\"\n3",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"0\"\n3",
       "expectedOutput": "false"
     }
   ],

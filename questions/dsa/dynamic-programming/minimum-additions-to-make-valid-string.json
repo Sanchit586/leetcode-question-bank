@@ -70,6 +70,22 @@
   ],
   "testCases": [
     {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "\"ababababababababababababa\"",
+      "expectedOutput": "14"
+    },
+    {
       "input": "\"b\"",
       "expectedOutput": "2"
     },
@@ -132,10 +148,6 @@
     {
       "input": "\"abcabc\"",
       "expectedOutput": "0"
-    },
-    {
-      "input": "\"abccba\"",
-      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

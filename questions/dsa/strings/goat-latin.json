@@ -60,6 +60,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxmaa\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\")()()()()()()()()()()()()()()()()()()()()()()()()(maa\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvw\"",
+      "expectedOutput": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwmaa\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(\"",
+      "expectedOutput": "\")()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()((maa\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamaa\""
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababa\"",
+      "expectedOutput": "\"abababababababababababababababababababababababababababababababababababababamaa\""
+    },
+    {
       "input": "\"I speak Goat Latin\"",
       "expectedOutput": "\"Imaa peaksmaaa oatGmaaaa atinLmaaaaa\""
     },
@@ -114,30 +138,6 @@
     {
       "input": "\"aba\"",
       "expectedOutput": "\"abamaa\""
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "\"abbamaa\""
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "\"aaaaamaa\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"abcdemaa\""
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "\"edcbamaa\""
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "\"aabmaa\""
-    },
-    {
-      "input": "\"aA\"",
-      "expectedOutput": "\"aAmaa\""
     }
   ],
   "sqlSchema": null,

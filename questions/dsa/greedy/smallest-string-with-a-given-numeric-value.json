@@ -127,16 +127,16 @@
       "expectedOutput": "\"aak\""
     },
     {
-      "input": "3\n-27",
-      "expectedOutput": "\"aaC\""
-    },
-    {
       "input": "3\n0",
       "expectedOutput": "\"aa^\""
     },
     {
       "input": "3\n1",
       "expectedOutput": "\"aa_\""
+    },
+    {
+      "input": "3\n2",
+      "expectedOutput": "\"aa`\""
     }
   ],
   "sqlSchema": null,

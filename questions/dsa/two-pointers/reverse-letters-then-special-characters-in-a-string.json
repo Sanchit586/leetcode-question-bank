@@ -69,6 +69,26 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\")()()()()()()()()()()()()()()()()()()()()()()()()(\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "\"bababababababababababababababababababababababababa\""
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\""
+    },
+    {
       "input": "\")ebc#da@f(\"",
       "expectedOutput": "\"(fad@cb#e)\""
     },
@@ -127,26 +147,6 @@
     {
       "input": "\"ab\"",
       "expectedOutput": "\"ba\""
-    },
-    {
-      "input": "\"ba\"",
-      "expectedOutput": "\"ab\""
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "\"aba\""
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "\"abba\""
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "\"aaaaa\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"edcba\""
     }
   ],
   "sqlSchema": null,

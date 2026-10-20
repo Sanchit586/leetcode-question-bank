@@ -325,18 +325,24 @@ def mutate_arg(val, ptype):
     elif 'int' in ptype_lower or 'long' in ptype_lower:
         if isinstance(val, int):
             max_base = abs(val)
+            allow_neg = (val < 0)
             if max_base <= 10:
                 # Small/combinatorial domain: strictly bound to prevent exponential explosion
-                cands = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, val - 1, val + 1, val - 2, val + 2, val - 3, val + 3, -1, -2]
-                mutations.extend([x for x in cands if -5 <= x <= min(max_base + 5, 10)])
+                cands = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, val - 1, val + 1, val - 2, val + 2, val - 3, val + 3]
+                if allow_neg:
+                    cands.extend([-1, -2, -3])
+                mutations.extend([x for x in cands if (0 if not allow_neg else -5) <= x <= min(max_base + 5, 10)])
             else:
                 # Standard integer domain
-                mutations.extend([
+                cands = [
                     val - 1, val + 1, val - 2, val + 2, val - 3, val + 3,
                     val * 2 if abs(val) <= 1000 else val,
                     val // 2 if val else 0,
-                    -val, 0, 1, 2, 3, 4, 5, -1, -2, -3, 10, 20, 50, 100
-                ])
+                    0, 1, 2, 3, 4, 5, 10, 20, 50, 100
+                ]
+                if allow_neg:
+                    cands.extend([-val, -1, -2, -3, -10])
+                mutations.extend([x for x in cands if allow_neg or x >= 0])
         else:
             mutations.extend([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
             
@@ -372,6 +378,154 @@ def mutate_arg(val, ptype):
         mutations.extend(LIST_TEMPLATES)
                 
     return mutations
+
+def parse_max_constraint(constraints, params, ret_type=''):
+    max_c = 0
+    for c in constraints:
+        matches = re.findall(r'(?:length|size|\bn\b|\bm\b|\bk\b|rows?|cols?)\s*<=\s*([0-9\^x\*\s\+\.]+)', c, re.IGNORECASE)
+        for m in matches:
+            m_clean = m.strip().replace(' ', '')
+            val = None
+            if '105' in m_clean or '10^5' in m_clean: val = 100000
+            elif '104' in m_clean or '10^4' in m_clean: val = 10000
+            elif '103' in m_clean or '10^3' in m_clean: val = 1000
+            elif m_clean.isdigit(): val = int(m_clean)
+            if val and val > max_c:
+                max_c = val
+
+    ret_str = str(ret_type).lower()
+    has_matrix = any('[][]' in p['type'] for p in params) or ('[][]' in ret_str) or ('list<list' in ret_str)
+    has_tree = any('tree' in p['type'].lower() for p in params) or ('tree' in ret_str)
+    has_list = any('listnode' in p['type'].lower() for p in params) or ('listnode' in ret_str)
+    has_array_or_str = any('[]' in p['type'] or 'string' in p['type'].lower() for p in params)
+
+    if has_matrix:
+        # If integer input generating matrix: strictly bound to 5 or 6 (matrix elements grow quadratically or exponentially)
+        if len(params) == 1 and ('int' in params[0]['type'].lower()):
+            return 5, 3
+        very_large = min(max_c if max_c > 0 else 40, 40)
+        mod_large = max(5, min(very_large // 2, 20))
+        return very_large, mod_large
+
+    if has_tree or has_list:
+        very_large = min(max_c if max_c > 0 else 1200, 1200)
+        mod_large = max(10, min(very_large // 4, 300))
+        return very_large, mod_large
+
+    if max_c >= 50000:
+        return 20000, 4000
+    elif max_c >= 5000:
+        return min(max_c, 8000), 2000
+    elif max_c >= 500:
+        return min(max_c, 1500), 300
+    elif max_c >= 50:
+        return min(max_c, 50), max_c // 2
+    elif max_c > 0:
+        return max_c, max(1, max_c - 2)
+    else:
+        if has_array_or_str:
+            return 15000, 3000
+        return 1000, 200
+
+def generate_scaled_candidates(params, n, variant=0):
+    if not params:
+        return []
+    p0_type = params[0]['type'].lower()
+    
+    # 1 Param: Array
+    if len(params) == 1 and '[]' in p0_type and not '[][]' in p0_type:
+        if 'string' in p0_type:
+            words = ["alpha", "beta", "gamma", "delta", "epsilon", "zeta", "eta", "theta"]
+            return [json.dumps([(words[i % len(words)] + str(i)) for i in range(min(n, 5000))], separators=(',', ':'))]
+        if variant == 0:
+            return [json.dumps([i % 5000 for i in range(n)], separators=(',', ':'))]
+        elif variant == 1:
+            return [json.dumps([-50 if i % 2 == 0 else 50 for i in range(n)], separators=(',', ':'))]
+        elif variant == 2:
+            return [json.dumps([(n - i) % 5000 for i in range(n)], separators=(',', ':'))]
+        elif variant == 3:
+            return [json.dumps([7] * n, separators=(',', ':'))]
+        else:
+            return [json.dumps([1, -1, 2, -2] * (n // 4 + 1), separators=(',', ':'))]
+
+    # 1 Param: String
+    if len(params) == 1 and p0_type == 'string':
+        if variant == 0:
+            s = ("abcdefghijklmnopqrstuvwxyz" * (n // 26 + 1))[:n]
+        elif variant == 1:
+            s = ("()" * (n // 2 + 1))[:n]
+        elif variant == 2:
+            s = "a" * n
+        elif variant == 3:
+            s = ("ab" * (n // 2 + 1))[:n]
+        else:
+            s = (("abcde" * (n // 10 + 1))[:n // 2]) + (("abcde" * (n // 10 + 1))[:n // 2])[::-1]
+        return [json.dumps(s)]
+
+    # 1 Param: Integer
+    if len(params) == 1 and ('int' in p0_type or 'long' in p0_type):
+        val = max(1, n - variant)
+        return [str(val)]
+
+    # 1 Param: Matrix
+    if len(params) == 1 and '[][]' in p0_type:
+        r = c = min(n, 40)
+        if variant == 0:
+            mat = [[(i * c + j) % 1000 for j in range(c)] for i in range(r)]
+        else:
+            mat = [[1 if (i + j) % 2 == 0 else 0 for j in range(c)] for i in range(r)]
+        return [json.dumps(mat, separators=(',', ':'))]
+
+    # 1 Param: Tree
+    if len(params) == 1 and p0_type == 'treenode':
+        tree_size = min(n, 500)
+        return [json.dumps(list(range(1, tree_size + 1)), separators=(',', ':'))]
+
+    # 1 Param: ListNode
+    if len(params) == 1 and p0_type == 'listnode':
+        list_size = min(n, 1000)
+        return [json.dumps(list(range(1, list_size + 1)), separators=(',', ':'))]
+
+    # 2 Params: Array + Integer (e.g. two-sum, k-elements)
+    if len(params) == 2 and '[]' in p0_type and ('int' in params[1]['type'].lower()):
+        if variant == 0:
+            arr = list(range(n))
+            t = arr[n // 3] + arr[-1]
+        elif variant == 1:
+            arr = [x * 2 for x in range(n)]
+            t = arr[n // 2] + arr[n - 1]
+        elif variant == 2:
+            arr = list(range(n))
+            t = n // 2
+        else:
+            arr = [-x for x in range(n)]
+            t = arr[min(5, n - 1)] + arr[-1]
+        return [json.dumps(arr, separators=(',', ':')), str(t)]
+
+    # 2 Params: String + Integer
+    if len(params) == 2 and p0_type == 'string' and ('int' in params[1]['type'].lower()):
+        s = ("abcdefghijklmnopqrstuvwxyz" * (n // 26 + 1))[:n]
+        k = max(1, min(n // 2, 100))
+        return [json.dumps(s), str(k)]
+
+    # 2 Params: String + String
+    if len(params) == 2 and p0_type == 'string' and params[1]['type'].lower() == 'string':
+        s1 = ("abcdefghijklmnopqrstuvwxyz" * (n // 26 + 1))[:n]
+        s2 = s1 if variant == 0 else s1[::-1]
+        return [json.dumps(s1), json.dumps(s2)]
+
+    # 2 Params: ListNode + ListNode
+    if len(params) == 2 and p0_type == 'listnode' and params[1]['type'].lower() == 'listnode':
+        half = min(n // 2, 500)
+        l1 = list(range(0, half * 2, 2))
+        l2 = list(range(1, half * 2, 2))
+        return [json.dumps(l1, separators=(',', ':')), json.dumps(l2, separators=(',', ':'))]
+
+    # 2 Params: Integer + Integer
+    if len(params) == 2 and ('int' in p0_type) and ('int' in params[1]['type'].lower()):
+        return [str(n), str(max(1, n // 2))]
+
+    return []
 
 # --- Engine Core ---
 
@@ -490,13 +644,25 @@ class BatchTestEngine:
             sol_instance = mod.Solution()
             func = getattr(sol_instance, func_name)
 
-            verified_cases = []
+            # Extract problem scales from constraints
+            vl_n, ml_n = parse_max_constraint(question_data.get('constraints', []), params, ret_type)
+
+            very_large_cases = []
+            mod_large_cases = []
+            edge_cases = []
             seen_inputs = set()
             base_parsed = []
 
-            def try_input_lines(lines):
-                if len(verified_cases) >= 20:
+            def try_input_lines(lines, tier='edge', scale=None):
+                if 'divide' in slug and len(lines) >= 2 and lines[1].strip() == '0':
                     return False
+                if 'reinitialize-a-permutation' in slug:
+                    try:
+                        val_n = int(lines[0].strip())
+                        if val_n % 2 != 0 or val_n <= 0:
+                            return False
+                    except Exception:
+                        pass
                 input_str = '\n'.join(lines)
                 if input_str in seen_inputs:
                     return False
@@ -504,8 +670,10 @@ class BatchTestEngine:
                     parsed_args = [parse_param(lines[j], params[j]['type']) for j in range(len(params))]
                     exec_args = copy.deepcopy(parsed_args)
                     
-                    # Run with instruction/step limit tracer protection
-                    sys.settrace(make_tracer(50000))
+                    # Bounded instruction step limit: abort infinite loops rapidly (25k steps = ~0.01s)
+                    # while allowing scaled N=20,000 optimal O(N) routines enough steps
+                    step_limit = max(100000, (scale or 10000) * 8) if tier in ('very_large', 'mod_large') else 25000
+                    sys.settrace(make_tracer(step_limit))
                     try:
                         ret = func(*exec_args)
                     finally:
@@ -516,93 +684,140 @@ class BatchTestEngine:
                     
                     if out_str and out_str != "null" and out_str != "":
                         seen_inputs.add(input_str)
-                        verified_cases.append({
+                        case_obj = {
                             "input": input_str,
                             "expectedOutput": out_str
-                        })
+                        }
+                        if tier == 'very_large':
+                            very_large_cases.append(case_obj)
+                        elif tier == 'mod_large':
+                            mod_large_cases.append(case_obj)
+                        else:
+                            edge_cases.append(case_obj)
                         return True
                 except Exception:
                     return False
                 return False
 
-            # Step A: Official Public Judge Cases from exampleTestcaseList
+            # Step 1: Base & Public Judge Cases (Tier: edge)
             for tc in raw_data.get('exampleTestcaseList') or []:
                 lines = tc.strip().split('\n')
                 if len(lines) == len(params):
-                    if try_input_lines(lines):
+                    if try_input_lines(lines, tier='edge'):
                         try:
                             base_parsed.append([json.loads(l) for l in lines])
                         except Exception:
                             pass
 
-            # Step B: Official Public Tests from question JSON
             for pt in question_data.get('publicTests') or []:
-                if len(verified_cases) >= 20:
-                    break
                 lines = pt.get('input', '').strip().split('\n')
                 if len(lines) == len(params):
-                    if try_input_lines(lines):
+                    if try_input_lines(lines, tier='edge'):
                         try:
                             base_parsed.append([json.loads(l) for l in lines])
                         except Exception:
                             pass
 
-            # Step C: Single-Argument Mutations from base cases
-            for b_args in list(base_parsed):
-                if len(verified_cases) >= 20:
+            # Step 2: 2 Very Large Test Cases (near max constraints)
+            for v in range(5):
+                if len(very_large_cases) >= 2:
                     break
-                for i in range(len(params)):
-                    if len(verified_cases) >= 20:
-                        break
-                    muts = mutate_arg(b_args[i], params[i]['type'])
-                    for m in muts:
-                        if len(verified_cases) >= 20:
-                            break
-                        new_args = copy.deepcopy(b_args)
-                        new_args[i] = m
-                        try_input_lines([json.dumps(a, separators=(',', ':')) for a in new_args])
+                vl_lines = generate_scaled_candidates(params, vl_n, variant=v)
+                if vl_lines and len(vl_lines) == len(params):
+                    try_input_lines(vl_lines, tier='very_large', scale=vl_n)
 
-            # Step D: Coupled (Array, Int) Mutations (e.g. nums + target / k)
+            # Step 3: 4 Moderately Large Test Cases
+            for v in range(6):
+                if len(mod_large_cases) >= 4:
+                    break
+                ml_lines = generate_scaled_candidates(params, ml_n, variant=v)
+                if ml_lines and len(ml_lines) == len(params):
+                    try_input_lines(ml_lines, tier='mod_large', scale=ml_n)
+
+            # Step 4: Coupled (Array, Int) Mutations (ensuring valid pair/target relationships)
             if len(params) == 2 and '[]' in params[0]['type'] and 'int' in params[1]['type']:
                 for b_args in list(base_parsed):
-                    if len(verified_cases) >= 20:
+                    if len(edge_cases) >= 20:
                         break
                     arr = b_args[0]
                     if isinstance(arr, list) and len(arr) >= 2:
                         candidates_t = [arr[0], arr[-1], arr[0] + arr[1], arr[0] + arr[-1], 0, 1, len(arr), sum(arr)]
                         for ct in candidates_t:
-                            if len(verified_cases) >= 20:
+                            if len(edge_cases) >= 20:
                                 break
-                            try_input_lines([json.dumps(arr, separators=(',', ':')), str(ct)])
-                            try_input_lines([json.dumps(arr[::-1], separators=(',', ':')), str(ct)])
+                            try_input_lines([json.dumps(arr, separators=(',', ':')), str(ct)], tier='edge')
+                            try_input_lines([json.dumps(arr[::-1], separators=(',', ':')), str(ct)], tier='edge')
 
-            # Step E: Pair template combinations if still < 20
-            if len(verified_cases) < 20 and len(params) == 2 and base_parsed:
+            # Step 5: Edge, Minimal, and Structural Mutations
+            for b_args in list(base_parsed):
+                if len(edge_cases) >= 20:
+                    break
+                for i in range(len(params)):
+                    if len(edge_cases) >= 20:
+                        break
+                    muts = mutate_arg(b_args[i], params[i]['type'])
+                    for m in muts:
+                        if len(edge_cases) >= 20:
+                            break
+                        new_args = copy.deepcopy(b_args)
+                        new_args[i] = m
+                        try_input_lines([json.dumps(a, separators=(',', ':')) for a in new_args], tier='edge')
+
+            # Step 6: Pair template combinations if still needed
+            if len(edge_cases) < 20 and len(params) == 2 and base_parsed:
                 p0_muts = mutate_arg(base_parsed[0][0], params[0]['type'])
                 p1_muts = mutate_arg(base_parsed[0][1], params[1]['type'])
                 for m0 in p0_muts[:15]:
                     for m1 in p1_muts[:15]:
-                        if len(verified_cases) >= 20:
+                        if len(edge_cases) >= 20:
                             break
-                        try_input_lines([json.dumps(m0, separators=(',', ':')), json.dumps(m1, separators=(',', ':'))])
+                        try_input_lines([json.dumps(m0, separators=(',', ':')), json.dumps(m1, separators=(',', ':'))], tier='edge')
 
-            # Step F: Cross-pollination between different base cases
-            if len(base_parsed) > 1 and len(params) >= 2 and len(verified_cases) < 20:
+            # Step 7: Cross-pollination between base cases
+            if len(base_parsed) > 1 and len(params) >= 2 and len(edge_cases) < 20:
                 for b1 in base_parsed:
                     for b2 in base_parsed:
-                        if len(verified_cases) >= 20:
+                        if len(edge_cases) >= 20:
                             break
                         if b1 != b2:
                             hybrid = [b1[0]] + b2[1:]
-                            try_input_lines([json.dumps(a, separators=(',', ':')) for a in hybrid])
+                            try_input_lines([json.dumps(a, separators=(',', ':')) for a in hybrid], tier='edge')
+
+            # Step 8: Integer backfill for small / single-param integer problems
+            if len(edge_cases) < 20 and len(params) == 1 and ('int' in params[0]['type'].lower()):
+                cand_pool = [0, 1, 2, 3, 4, 5] if ('[][]' in str(ret_type).lower()) else [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 50, 100, 200]
+                for cand_n in cand_pool:
+                    if len(edge_cases) >= 20:
+                        break
+                    try_input_lines([str(cand_n)], tier='edge')
+
+            # Assemble Exactly 20 Test Cases according to Tier Allocation:
+            # - 2 Very Large Cases
+            # - 4 Moderately Large Cases
+            # - 14 Edge/Moderate Cases
+            final_cases = []
+            final_cases.extend(very_large_cases[:2])
+            final_cases.extend(mod_large_cases[:4])
+
+            remaining_needed = 20 - len(final_cases)
+            final_cases.extend(edge_cases[:remaining_needed])
+
+            # Backfill from any remaining verified cases if any tier fell short
+            if len(final_cases) < 20:
+                for pool in [very_large_cases[2:], mod_large_cases[4:], edge_cases[remaining_needed:]]:
+                    for c in pool:
+                        if len(final_cases) >= 20:
+                            break
+                        if c not in final_cases:
+                            final_cases.append(c)
 
             # Update question JSON if we generated verified cases
-            if verified_cases:
-                question_data['testCases'] = verified_cases[:20]
+            if final_cases:
+                question_data['testCases'] = final_cases[:20]
                 with open(file_path, 'w', encoding='utf-8') as f:
                     json.dump(question_data, f, indent=2, ensure_ascii=False)
                     f.write('\n')
-                return len(verified_cases[:20]), "success"
+                return len(final_cases[:20]), "success"
             else:
                 return 0, "no_verified_cases"
 

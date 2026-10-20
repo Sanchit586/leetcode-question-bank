@@ -59,6 +59,10 @@
   ],
   "testCases": [
     {
+      "input": "1000",
+      "expectedOutput": "1"
+    },
+    {
       "input": "2932",
       "expectedOutput": "52"
     },

@@ -70,6 +70,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "0"
+    },
+    {
       "input": "\"ababc\"\n\"ab\"",
       "expectedOutput": "2"
     },
@@ -139,14 +147,6 @@
     },
     {
       "input": "\"edcba\"\n\"ab\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"aab\"\n\"ab\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aA\"\n\"ab\"",
       "expectedOutput": "0"
     }
   ],

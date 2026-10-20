@@ -66,6 +66,30 @@
   ],
   "testCases": [
     {
+      "input": "8000",
+      "expectedOutput": "1998"
+    },
+    {
+      "input": "7999",
+      "expectedOutput": "1995"
+    },
+    {
+      "input": "2000",
+      "expectedOutput": "499"
+    },
+    {
+      "input": "1999",
+      "expectedOutput": "496"
+    },
+    {
+      "input": "1998",
+      "expectedOutput": "496"
+    },
+    {
+      "input": "1997",
+      "expectedOutput": "496"
+    },
+    {
       "input": "3",
       "expectedOutput": "0"
     },
@@ -104,6 +128,22 @@
     {
       "input": "9",
       "expectedOutput": "1"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "12",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "16",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

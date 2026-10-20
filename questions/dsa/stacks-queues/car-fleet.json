@@ -118,10 +118,6 @@
       "expectedOutput": "2"
     },
     {
-      "input": "-12\n[10,8,0,5,3]\n[2,4,1,1,3]",
-      "expectedOutput": "0"
-    },
-    {
       "input": "0\n[10,8,0,5,3]\n[2,4,1,1,3]",
       "expectedOutput": "0"
     },
@@ -146,12 +142,16 @@
       "expectedOutput": "2"
     },
     {
-      "input": "-1\n[10,8,0,5,3]\n[2,4,1,1,3]",
-      "expectedOutput": "0"
+      "input": "20\n[10,8,0,5,3]\n[2,4,1,1,3]",
+      "expectedOutput": "3"
     },
     {
-      "input": "-2\n[10,8,0,5,3]\n[2,4,1,1,3]",
-      "expectedOutput": "0"
+      "input": "50\n[10,8,0,5,3]\n[2,4,1,1,3]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "100\n[10,8,0,5,3]\n[2,4,1,1,3]",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

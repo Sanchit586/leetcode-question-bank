@@ -61,6 +61,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefgh\"",
+      "expectedOutput": "\"123456789\""
+    },
+    {
+      "input": "\"()()()()\"",
+      "expectedOutput": "\"123456789\""
+    },
+    {
+      "input": "\"abcdef\"",
+      "expectedOutput": "\"1234567\""
+    },
+    {
+      "input": "\"()()()\"",
+      "expectedOutput": "\"1234567\""
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "\"1234567\""
+    },
+    {
+      "input": "\"ababab\"",
+      "expectedOutput": "\"1234567\""
+    },
+    {
       "input": "\"IIIDIDDD\"",
       "expectedOutput": "\"123549876\""
     },
@@ -115,30 +139,6 @@
     {
       "input": "\"ba\"",
       "expectedOutput": "\"123\""
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "\"1234\""
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "\"12345\""
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "\"123456\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"123456\""
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "\"123456\""
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "\"1234\""
     }
   ],
   "sqlSchema": null,

@@ -98,14 +98,6 @@
       "expectedOutput": "0"
     },
     {
-      "input": "-1\n3\n1\n1",
-      "expectedOutput": "15"
-    },
-    {
-      "input": "-2\n3\n1\n1",
-      "expectedOutput": "15"
-    },
-    {
       "input": "3\n0\n1\n1",
       "expectedOutput": "0"
     },
@@ -136,6 +128,14 @@
     {
       "input": "3\n8\n1\n1",
       "expectedOutput": "504"
+    },
+    {
+      "input": "3\n3\n2\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "3\n3\n3\n1",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

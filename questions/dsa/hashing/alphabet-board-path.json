@@ -55,6 +55,26 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"!R!R!R!R!LLLLD!R!R!R!R!LLLLD!R!R!R!R!LLLLD!R!R!R!R!LLLLD!R!R!R!R!LLLLD!UUUUU!R!R!R!R!LLLLD!R!R!R!R!LLLLD!R!R!R!R!LLLLD!R!R!R!R!LLLLD!R!R!R!\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"UUUUUUUUUUUURRR!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\""
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "\"!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!L!R!\""
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "\"!R!R!R!R!LLLL!R!R!R!R!LLLL!R!R!R!R!LLLL!R!R!R!R!LLLL!R!R!R!R!!L!L!L!L!RRRR!L!L!L!L!RRRR!L!L!L!L!RRRR!L!L!L!L!RRRR!L!L!L!L!\""
+    },
+    {
       "input": "\"leet\"",
       "expectedOutput": "\"RDD!UURRR!!DDD!\""
     },
@@ -113,26 +133,6 @@
     {
       "input": "\"ba\"",
       "expectedOutput": "\"R!L!\""
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "\"!R!L!\""
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "\"!R!!L!\""
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "\"!!!!!\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"!R!R!R!R!\""
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "\"RRRR!L!L!L!L!\""
     }
   ],
   "sqlSchema": null,

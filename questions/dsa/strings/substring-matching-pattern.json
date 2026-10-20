@@ -70,6 +70,22 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxy\"\n\"abcdefghijklmnopqrstuvwxy\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxy\"\n\"yxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "false"
+    },
+    {
       "input": "\"leetcode\"\n\"ee*e\"",
       "expectedOutput": "true"
     },
@@ -131,22 +147,6 @@
     },
     {
       "input": "\"ab\"\n\"ee*e\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"ba\"\n\"ee*e\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aba\"\n\"ee*e\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"abba\"\n\"ee*e\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aaaaa\"\n\"ee*e\"",
       "expectedOutput": "false"
     }
   ],

@@ -131,16 +131,16 @@
       "expectedOutput": "23"
     },
     {
-      "input": "2\n-1",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "2\n-2",
-      "expectedOutput": "0"
-    },
-    {
       "input": "1\n3",
       "expectedOutput": "3"
+    },
+    {
+      "input": "3\n3",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "4\n3",
+      "expectedOutput": "9"
     }
   ],
   "sqlSchema": null,

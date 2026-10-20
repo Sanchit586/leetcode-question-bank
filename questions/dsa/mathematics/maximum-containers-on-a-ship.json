@@ -95,14 +95,6 @@
       "expectedOutput": "5"
     },
     {
-      "input": "-1\n3\n15",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "-2\n3\n15",
-      "expectedOutput": "4"
-    },
-    {
       "input": "2\n1\n15",
       "expectedOutput": "4"
     },
@@ -131,11 +123,19 @@
       "expectedOutput": "1"
     },
     {
-      "input": "2\n-1\n15",
+      "input": "2\n3\n14",
       "expectedOutput": "4"
     },
     {
-      "input": "2\n-2\n15",
+      "input": "2\n3\n16",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "2\n3\n13",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "2\n3\n17",
       "expectedOutput": "4"
     }
   ],

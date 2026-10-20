@@ -99,14 +99,6 @@
       "expectedOutput": "2"
     },
     {
-      "input": "-1\n4\n5",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "-2\n4\n5",
-      "expectedOutput": "4"
-    },
-    {
       "input": "3\n0\n5",
       "expectedOutput": "110"
     },
@@ -136,6 +128,14 @@
     },
     {
       "input": "3\n8\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n9\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n4\n0",
       "expectedOutput": "0"
     }
   ],

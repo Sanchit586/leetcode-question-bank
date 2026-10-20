@@ -58,6 +58,14 @@
   ],
   "testCases": [
     {
+      "input": "1000\n500",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "200\n100",
+      "expectedOutput": "2"
+    },
+    {
       "input": "2\n3",
       "expectedOutput": "3"
     },
@@ -128,14 +136,6 @@
     {
       "input": "0\n10",
       "expectedOutput": "0"
-    },
-    {
-      "input": "1\n10",
-      "expectedOutput": "10"
-    },
-    {
-      "input": "2\n10",
-      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

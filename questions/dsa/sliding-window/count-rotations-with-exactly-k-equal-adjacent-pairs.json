@@ -61,6 +61,10 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n25",
+      "expectedOutput": "0"
+    },
+    {
       "input": "\"aab\"\n1",
       "expectedOutput": "2"
     },
@@ -135,10 +139,6 @@
     {
       "input": "\"0\"\n1",
       "expectedOutput": "0"
-    },
-    {
-      "input": "\"121\"\n1",
-      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

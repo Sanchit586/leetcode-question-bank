@@ -70,6 +70,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "false"
+    },
+    {
       "input": "\"My name is Haley\"\n\"My Haley\"",
       "expectedOutput": "true"
     },
@@ -139,14 +147,6 @@
     },
     {
       "input": "\"abcde\"\n\"My Haley\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"edcba\"\n\"My Haley\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aab\"\n\"My Haley\"",
       "expectedOutput": "false"
     }
   ],

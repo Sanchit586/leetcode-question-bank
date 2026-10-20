@@ -71,6 +71,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghij\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdeedcba\"",
+      "expectedOutput": "25"
+    },
+    {
       "input": "\"bb\"",
       "expectedOutput": "1"
     },
@@ -141,14 +149,6 @@
     {
       "input": "\"racecar\"",
       "expectedOutput": "12"
-    },
-    {
-      "input": "\"hello\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"leetcode\"",
-      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

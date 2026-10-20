@@ -67,6 +67,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrst\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"()()()()()()()()()()\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcdefghijklmnopqr\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"()()()()()()()()()\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ababababababababab\"",
+      "expectedOutput": "false"
+    },
+    {
       "input": "\"0\"",
       "expectedOutput": "true"
     },
@@ -120,30 +144,6 @@
     },
     {
       "input": "\"edcba\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aA\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"121\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"racecar\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"hello\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"leetcode\"",
       "expectedOutput": "false"
     }
   ],

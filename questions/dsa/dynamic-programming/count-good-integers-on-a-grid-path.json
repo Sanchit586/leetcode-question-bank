@@ -120,14 +120,6 @@
       "expectedOutput": "0"
     },
     {
-      "input": "-1\n10\n\"DDDRRR\"",
-      "expectedOutput": "10"
-    },
-    {
-      "input": "-2\n10\n\"DDDRRR\"",
-      "expectedOutput": "10"
-    },
-    {
       "input": "8\n0\n\"DDDRRR\"",
       "expectedOutput": "-7"
     },
@@ -146,6 +138,14 @@
     {
       "input": "8\n4\n\"DDDRRR\"",
       "expectedOutput": "-3"
+    },
+    {
+      "input": "8\n5\n\"DDDRRR\"",
+      "expectedOutput": "-2"
+    },
+    {
+      "input": "8\n6\n\"DDDRRR\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

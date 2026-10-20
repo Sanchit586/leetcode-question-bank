@@ -126,20 +126,20 @@
       "expectedOutput": "\"1099\""
     },
     {
-      "input": "\"99\"\n-1",
-      "expectedOutput": "\"99-1\""
-    },
-    {
-      "input": "\"99\"\n-2",
-      "expectedOutput": "\"99-2\""
-    },
-    {
       "input": "\"-\"\n2",
       "expectedOutput": "\"-2\""
     },
     {
       "input": "\"13\"\n2",
       "expectedOutput": "\"213\""
+    },
+    {
+      "input": "\"-1\"\n2",
+      "expectedOutput": "\"-12\""
+    },
+    {
+      "input": "\"31-\"\n2",
+      "expectedOutput": "\"321-\""
     }
   ],
   "sqlSchema": null,

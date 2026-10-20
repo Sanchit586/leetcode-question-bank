@@ -67,6 +67,30 @@
   ],
   "testCases": [
     {
+      "input": "1000",
+      "expectedOutput": "\"ALL\""
+    },
+    {
+      "input": "999",
+      "expectedOutput": "\"ALK\""
+    },
+    {
+      "input": "200",
+      "expectedOutput": "\"GR\""
+    },
+    {
+      "input": "199",
+      "expectedOutput": "\"GQ\""
+    },
+    {
+      "input": "198",
+      "expectedOutput": "\"GP\""
+    },
+    {
+      "input": "197",
+      "expectedOutput": "\"GO\""
+    },
+    {
       "input": "1",
       "expectedOutput": "\"A\""
     },
@@ -121,30 +145,6 @@
     {
       "input": "25",
       "expectedOutput": "\"Y\""
-    },
-    {
-      "input": "31",
-      "expectedOutput": "\"AE\""
-    },
-    {
-      "input": "56",
-      "expectedOutput": "\"BD\""
-    },
-    {
-      "input": "14",
-      "expectedOutput": "\"N\""
-    },
-    {
-      "input": "10",
-      "expectedOutput": "\"J\""
-    },
-    {
-      "input": "20",
-      "expectedOutput": "\"T\""
-    },
-    {
-      "input": "50",
-      "expectedOutput": "\"AX\""
     }
   ],
   "sqlSchema": null,

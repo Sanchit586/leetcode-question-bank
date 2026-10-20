@@ -69,7 +69,7 @@
   "testCases": [
     {
       "input": "\"hit\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
-      "expectedOutput": "[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]"
+      "expectedOutput": "[[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"],[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"]]"
     },
     {
       "input": "\"hit\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",

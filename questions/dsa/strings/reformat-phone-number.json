@@ -68,6 +68,26 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"abc-def-ghi-jkl-mno-pqr-stu-vwx-yza-bcd-efg-hij-klm-nop-qrs-tuv-wx\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"()(-)()-()(-)()-()(-)()-()(-)()-()(-)()-()(-)()-()(-)()-()(-)()-()\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aaa-aa\""
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "\"aba-bab-aba-bab-aba-bab-aba-bab-aba-bab-aba-bab-aba-bab-aba-bab-ab\""
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "\"abc-dea-bcd-eab-cde-abc-dea-bcd-eed-cba-edc-bae-dcb-aed-cba-edc-ba\""
+    },
+    {
       "input": "\"1-23-45 6\"",
       "expectedOutput": "\"123-456\""
     },
@@ -126,26 +146,6 @@
     {
       "input": "\"aaaaa\"",
       "expectedOutput": "\"aaa-aa\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"abc-de\""
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "\"edc-ba\""
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "\"aab\""
-    },
-    {
-      "input": "\"aA\"",
-      "expectedOutput": "\"aA\""
-    },
-    {
-      "input": "\"121\"",
-      "expectedOutput": "\"121\""
     }
   ],
   "sqlSchema": null,

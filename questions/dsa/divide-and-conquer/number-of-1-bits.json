@@ -67,6 +67,30 @@
   ],
   "testCases": [
     {
+      "input": "50",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "49",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "115",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "114",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "113",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "112",
+      "expectedOutput": "3"
+    },
+    {
       "input": "11",
       "expectedOutput": "3"
     },
@@ -121,30 +145,6 @@
     {
       "input": "2",
       "expectedOutput": "1"
-    },
-    {
-      "input": "3",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "4",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "20",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "50",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "100",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "127",
-      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

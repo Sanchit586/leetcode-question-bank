@@ -113,14 +113,6 @@
       "expectedOutput": "[16,12,10,8,6,4,0,0]"
     },
     {
-      "input": "-1\n1\n3",
-      "expectedOutput": "[]"
-    },
-    {
-      "input": "-2\n1\n3",
-      "expectedOutput": "[]"
-    },
-    {
       "input": "3\n0\n3",
       "expectedOutput": "[4,2,0]"
     },
@@ -145,7 +137,15 @@
       "expectedOutput": "[4,2,0]"
     },
     {
-      "input": "3\n-1\n3",
+      "input": "3\n1\n0",
+      "expectedOutput": "[4,2,0]"
+    },
+    {
+      "input": "3\n1\n1",
+      "expectedOutput": "[4,2,0]"
+    },
+    {
+      "input": "3\n1\n2",
       "expectedOutput": "[4,2,0]"
     }
   ],

@@ -97,10 +97,6 @@
       "expectedOutput": "3"
     },
     {
-      "input": "[3,4,1]\n-2",
-      "expectedOutput": "-1"
-    },
-    {
       "input": "[2,5,4]\n0",
       "expectedOutput": "11"
     },
@@ -127,10 +123,6 @@
     {
       "input": "[2,5,4]\n7",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[2,5,4]\n-2",
-      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

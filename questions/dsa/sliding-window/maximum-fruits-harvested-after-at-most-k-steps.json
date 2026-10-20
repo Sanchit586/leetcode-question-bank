@@ -122,14 +122,6 @@
       "expectedOutput": "9"
     },
     {
-      "input": "[[2,8],[6,3],[8,6]]\n-1\n4",
-      "expectedOutput": "8"
-    },
-    {
-      "input": "[[2,8],[6,3],[8,6]]\n-2\n4",
-      "expectedOutput": "8"
-    },
-    {
       "input": "[[2,8],[6,3],[8,6]]\n5\n0",
       "expectedOutput": "0"
     },
@@ -151,6 +143,14 @@
     },
     {
       "input": "[[2,8],[6,3],[8,6]]\n5\n6",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[[2,8],[6,3],[8,6]]\n5\n7",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[[2,8],[6,3],[8,6]]\n5\n8",
       "expectedOutput": "11"
     }
   ],

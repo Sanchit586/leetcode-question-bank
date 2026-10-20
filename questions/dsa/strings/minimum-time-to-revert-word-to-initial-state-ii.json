@@ -71,6 +71,14 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n25",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyza\"\n26",
+      "expectedOutput": "1"
+    },
+    {
       "input": "\"abacaba\"\n3",
       "expectedOutput": "2"
     },
@@ -140,14 +148,6 @@
     },
     {
       "input": "\"aab\"\n3",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aA\"\n3",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"0\"\n3",
       "expectedOutput": "1"
     }
   ],

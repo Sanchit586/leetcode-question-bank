@@ -75,10 +75,6 @@
       "expectedOutput": "3"
     },
     {
-      "input": "4848\n4848",
-      "expectedOutput": "2"
-    },
-    {
       "input": "119\n130",
       "expectedOutput": "3"
     },
@@ -111,10 +107,6 @@
       "expectedOutput": "12"
     },
     {
-      "input": "-120\n130",
-      "expectedOutput": "12"
-    },
-    {
       "input": "0\n130",
       "expectedOutput": "12"
     },
@@ -139,11 +131,19 @@
       "expectedOutput": "12"
     },
     {
-      "input": "-1\n130",
+      "input": "10\n130",
       "expectedOutput": "12"
     },
     {
-      "input": "-2\n130",
+      "input": "20\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "50\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "100\n130",
       "expectedOutput": "12"
     }
   ],

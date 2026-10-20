@@ -131,14 +131,6 @@
       "expectedOutput": "true"
     },
     {
-      "input": "-1\n4\n[[2,1,1]]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "-2\n4\n[[2,1,1]]",
-      "expectedOutput": "true"
-    },
-    {
       "input": "3\n0\n[[2,1,1]]",
       "expectedOutput": "false"
     },
@@ -160,6 +152,14 @@
     },
     {
       "input": "3\n6\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n7\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n8\n[[2,1,1]]",
       "expectedOutput": "true"
     }
   ],

@@ -101,14 +101,6 @@
       "expectedOutput": "2985984"
     },
     {
-      "input": "[8,3,9,3,8]\n-1",
-      "expectedOutput": "111111112"
-    },
-    {
-      "input": "[8,3,9,3,8]\n-2",
-      "expectedOutput": "123456791"
-    },
-    {
       "input": "[19,12,14,6,10,18]\n0",
       "expectedOutput": "1"
     },
@@ -139,10 +131,6 @@
     {
       "input": "[19,12,14,6,10,18]\n8",
       "expectedOutput": "891911161"
-    },
-    {
-      "input": "[19,12,14,6,10,18]\n-1",
-      "expectedOutput": "157894738"
     }
   ],
   "sqlSchema": null,

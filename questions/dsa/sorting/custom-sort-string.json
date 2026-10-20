@@ -62,6 +62,22 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"yzaabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxx\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"\n\"xwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "\"yzaabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxx\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"",
+      "expectedOutput": "\"wwwxxxyyyzzzaaaabbbbccccddddeeeeffffgggghhhhiiiijjjjkkkkllllmmmmnnnnooooppppqqqqrrrrssssttttuuuuvvvv\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\"\n\"vutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba\"",
+      "expectedOutput": "\"wwwxxxyyyzzzaaaabbbbccccddddeeeeffffgggghhhhiiiijjjjkkkkllllmmmmnnnnooooppppqqqqrrrrssssttttuuuuvvvv\""
+    },
+    {
       "input": "\"cba\"\n\"abcd\"",
       "expectedOutput": "\"cdba\""
     },
@@ -124,22 +140,6 @@
     {
       "input": "\"abba\"\n\"abcd\"",
       "expectedOutput": "\"cdba\""
-    },
-    {
-      "input": "\"aaaaa\"\n\"abcd\"",
-      "expectedOutput": "\"bcda\""
-    },
-    {
-      "input": "\"abcde\"\n\"abcd\"",
-      "expectedOutput": "\"abcd\""
-    },
-    {
-      "input": "\"edcba\"\n\"abcd\"",
-      "expectedOutput": "\"dcba\""
-    },
-    {
-      "input": "\"aab\"\n\"abcd\"",
-      "expectedOutput": "\"cdab\""
     }
   ],
   "sqlSchema": null,

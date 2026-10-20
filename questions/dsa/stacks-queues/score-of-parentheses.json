@@ -70,6 +70,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxy\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()(\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ababababababababababababa\"",
+      "expectedOutput": "0"
+    },
+    {
       "input": "\"()\"",
       "expectedOutput": "1"
     },
@@ -123,30 +147,6 @@
     },
     {
       "input": "\"abba\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"aA\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"0\"",
       "expectedOutput": "0"
     }
   ],

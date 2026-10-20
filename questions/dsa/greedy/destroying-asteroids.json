@@ -109,14 +109,6 @@
       "expectedOutput": "true"
     },
     {
-      "input": "-1\n[3,9,19,5,21]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "-2\n[3,9,19,5,21]",
-      "expectedOutput": "false"
-    },
-    {
       "input": "10\n[3,9]",
       "expectedOutput": "true"
     },
@@ -138,6 +130,14 @@
     },
     {
       "input": "10\n[3,5,9,19,21]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "10\n[21,19,9,5,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "10\n[3,3,3,3,3]",
       "expectedOutput": "true"
     }
   ],

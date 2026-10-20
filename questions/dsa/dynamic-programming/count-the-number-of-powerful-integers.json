@@ -108,14 +108,6 @@
       "expectedOutput": "5"
     },
     {
-      "input": "-1\n6000\n4\n\"124\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "-2\n6000\n4\n\"124\"",
-      "expectedOutput": "5"
-    },
-    {
       "input": "1\n5999\n4\n\"124\"",
       "expectedOutput": "5"
     },
@@ -149,6 +141,14 @@
     },
     {
       "input": "1\n1\n4\n\"124\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n2\n4\n\"124\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n3\n4\n\"124\"",
       "expectedOutput": "0"
     }
   ],

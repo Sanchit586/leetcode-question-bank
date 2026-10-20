@@ -68,6 +68,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "\"#abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"#()()()()()()()()()()()()()()()()()()()()()()()()()\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvw\"",
+      "expectedOutput": "\"#abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvw\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(\"",
+      "expectedOutput": "\"#()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()(\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\""
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababa\"",
+      "expectedOutput": "\"#abababababababababababababababababababababababababababababababababababababa\""
+    },
+    {
       "input": "\"Leetcode daily streak achieved\"",
       "expectedOutput": "\"#leetcodeDailyStreakAchieved\""
     },
@@ -122,30 +146,6 @@
     {
       "input": "\"ba\"",
       "expectedOutput": "\"#ba\""
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "\"#aba\""
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "\"#abba\""
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "\"#aaaaa\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"#abcde\""
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "\"#edcba\""
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "\"#aab\""
     }
   ],
   "sqlSchema": null,

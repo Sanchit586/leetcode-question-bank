@@ -82,72 +82,72 @@
       "expectedOutput": "\"0\""
     },
     {
-      "input": "[4,3,2,5]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[4,3,2,5,6,7,2,5,5]\n4",
+      "expectedOutput": "\"77\""
     },
     {
-      "input": "[6,7,2,5,5]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[5,5,2,7,6,5,2,3,4]\n4",
+      "expectedOutput": "\"77\""
     },
     {
-      "input": "[4]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[4,3,2,5,6,7,2,5,5]\n5",
+      "expectedOutput": "\"72\""
     },
     {
-      "input": "[4,5]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[5,5,2,7,6,5,2,3,4]\n5",
+      "expectedOutput": "\"87\""
     },
     {
-      "input": "[4,3]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[4,3,2,5,6,7,2,5,5]\n7",
+      "expectedOutput": "\"772\""
+    },
+    {
+      "input": "[5,5,2,7,6,5,2,3,4]\n7",
+      "expectedOutput": "\"877\""
     },
     {
       "input": "[5,5,2,7,6,5,2,3,4]\n9",
       "expectedOutput": "\"8777\""
     },
     {
-      "input": "[2,2,3,4,5,5,5,6,7]\n9",
-      "expectedOutput": "\"3222\""
+      "input": "[4,3,2,5,6,7,2,5,5]\n0",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "[7,6,5,5,5,4,3,2,2]\n9",
-      "expectedOutput": "\"9997\""
+      "input": "[5,5,2,7,6,5,2,3,4]\n0",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "[4,4,4,4,4]\n9",
+      "input": "[4,3,2,5,6,7,2,5,5]\n1",
       "expectedOutput": "\"0\""
     },
     {
-      "input": "[8,6,4,10,12,14,4,10,10]\n9",
+      "input": "[5,5,2,7,6,5,2,3,4]\n1",
       "expectedOutput": "\"0\""
     },
     {
-      "input": "[5,4,3,6,7,8,3,6,6]\n9",
-      "expectedOutput": "\"777\""
+      "input": "[4,3,2,5,6,7,2,5,5]\n39",
+      "expectedOutput": "\"7777777777777777772\""
     },
     {
-      "input": "[3,2,1,4,5,6,1,4,4]\n9",
-      "expectedOutput": "\"777777777\""
+      "input": "[5,5,2,7,6,5,2,3,4]\n39",
+      "expectedOutput": "\"8777777777777777777\""
     },
     {
-      "input": "[0,0,0,0]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[7,6,5,5,5,6,8,7,8]\n7",
+      "expectedOutput": "\"8\""
     },
     {
-      "input": "[1,1,1,1]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[8,7,8,6,5,5,5,6,7]\n7",
+      "expectedOutput": "\"9\""
     },
     {
-      "input": "[0]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[7,6,5,5,5,6,8,7,8]\n8",
+      "expectedOutput": "\"9\""
     },
     {
-      "input": "[1]\n9",
-      "expectedOutput": "\"0\""
-    },
-    {
-      "input": "[0,0]\n9",
-      "expectedOutput": "\"0\""
+      "input": "[8,7,8,6,5,5,5,6,7]\n8",
+      "expectedOutput": "\"3\""
     }
   ],
   "sqlSchema": null,

@@ -83,6 +83,30 @@
       "expectedOutput": "\"HHVVH\""
     },
     {
+      "input": "[3,2]\n2",
+      "expectedOutput": "\"HVHVV\""
+    },
+    {
+      "input": "[3,2]\n3",
+      "expectedOutput": "\"HVVHV\""
+    },
+    {
+      "input": "[2,3]\n5",
+      "expectedOutput": "\"HVHVH\""
+    },
+    {
+      "input": "[3,2]\n5",
+      "expectedOutput": "\"VHHVV\""
+    },
+    {
+      "input": "[2,3]\n0",
+      "expectedOutput": "\"HHHVV\""
+    },
+    {
+      "input": "[3,2]\n0",
+      "expectedOutput": "\"HHVVV\""
+    },
+    {
       "input": "[3,2]\n1",
       "expectedOutput": "\"HHVVV\""
     },
@@ -125,30 +149,6 @@
     {
       "input": "[100,-100]\n1",
       "expectedOutput": "\"\""
-    },
-    {
-      "input": "[2,3]\n0",
-      "expectedOutput": "\"HHHVV\""
-    },
-    {
-      "input": "[2,3]\n4",
-      "expectedOutput": "\"HVHHV\""
-    },
-    {
-      "input": "[2,3]\n5",
-      "expectedOutput": "\"HVHVH\""
-    },
-    {
-      "input": "[2,3]\n6",
-      "expectedOutput": "\"HVVHH\""
-    },
-    {
-      "input": "[2,3]\n-1",
-      "expectedOutput": "\"HHHVV\""
-    },
-    {
-      "input": "[2,3]\n-2",
-      "expectedOutput": "\"HHHVV\""
     }
   ],
   "sqlSchema": null,

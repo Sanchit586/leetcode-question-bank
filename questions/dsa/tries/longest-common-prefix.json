@@ -61,6 +61,14 @@
   ],
   "testCases": [
     {
+      "input": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\",\"epsilon28\",\"zeta29\",\"eta30\",\"theta31\",\"alpha32\",\"beta33\",\"gamma34\",\"delta35\",\"epsilon36\",\"zeta37\",\"eta38\",\"theta39\",\"alpha40\",\"beta41\",\"gamma42\",\"delta43\",\"epsilon44\",\"zeta45\",\"eta46\",\"theta47\",\"alpha48\",\"beta49\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"alpha0\",\"beta1\",\"gamma2\",\"delta3\",\"epsilon4\",\"zeta5\",\"eta6\",\"theta7\",\"alpha8\",\"beta9\",\"gamma10\",\"delta11\",\"epsilon12\",\"zeta13\",\"eta14\",\"theta15\",\"alpha16\",\"beta17\",\"gamma18\",\"delta19\",\"epsilon20\",\"zeta21\",\"eta22\",\"theta23\",\"alpha24\",\"beta25\",\"gamma26\",\"delta27\",\"epsilon28\",\"zeta29\",\"eta30\",\"theta31\",\"alpha32\",\"beta33\",\"gamma34\",\"delta35\",\"epsilon36\",\"zeta37\",\"eta38\",\"theta39\",\"alpha40\",\"beta41\",\"gamma42\",\"delta43\",\"epsilon44\",\"zeta45\",\"eta46\",\"theta47\",\"alpha48\",\"beta49\",\"gamma50\",\"delta51\",\"epsilon52\",\"zeta53\",\"eta54\",\"theta55\",\"alpha56\",\"beta57\",\"gamma58\",\"delta59\",\"epsilon60\",\"zeta61\",\"eta62\",\"theta63\",\"alpha64\",\"beta65\",\"gamma66\",\"delta67\",\"epsilon68\",\"zeta69\",\"eta70\",\"theta71\",\"alpha72\",\"beta73\",\"gamma74\",\"delta75\",\"epsilon76\",\"zeta77\",\"eta78\",\"theta79\",\"alpha80\",\"beta81\",\"gamma82\",\"delta83\",\"epsilon84\",\"zeta85\",\"eta86\",\"theta87\",\"alpha88\",\"beta89\",\"gamma90\",\"delta91\",\"epsilon92\",\"zeta93\",\"eta94\",\"theta95\",\"alpha96\",\"beta97\",\"gamma98\",\"delta99\"]",
+      "expectedOutput": "\"\""
+    },
+    {
       "input": "[\"flower\",\"flow\",\"flight\"]",
       "expectedOutput": "\"fl\""
     },
@@ -130,14 +138,6 @@
     },
     {
       "input": "[\"one\",\"two\",\"three\"]",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "[\"hello\",\"world\"]",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "[\"a\",\"b\",\"c\",\"d\"]",
       "expectedOutput": "\"\""
     }
   ],

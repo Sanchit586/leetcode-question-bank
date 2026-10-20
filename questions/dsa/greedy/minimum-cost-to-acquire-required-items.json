@@ -112,14 +112,6 @@
       "expectedOutput": "3"
     },
     {
-      "input": "-1\n2\n1\n3\n2",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "-2\n2\n1\n3\n2",
-      "expectedOutput": "-2"
-    },
-    {
       "input": "3\n0\n1\n3\n2",
       "expectedOutput": "3"
     },
@@ -146,6 +138,14 @@
     {
       "input": "3\n7\n1\n3\n2",
       "expectedOutput": "3"
+    },
+    {
+      "input": "3\n2\n0\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n2\n2\n3\n2",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

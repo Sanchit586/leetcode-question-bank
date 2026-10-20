@@ -57,6 +57,14 @@
   ],
   "testCases": [
     {
+      "input": "1000\n500",
+      "expectedOutput": "1500"
+    },
+    {
+      "input": "200\n100",
+      "expectedOutput": "300"
+    },
+    {
       "input": "12\n5",
       "expectedOutput": "17"
     },
@@ -97,10 +105,6 @@
       "expectedOutput": "11"
     },
     {
-      "input": "-12\n5",
-      "expectedOutput": "-7"
-    },
-    {
       "input": "0\n5",
       "expectedOutput": "5"
     },
@@ -125,16 +129,12 @@
       "expectedOutput": "10"
     },
     {
-      "input": "-1\n5",
-      "expectedOutput": "4"
+      "input": "20\n5",
+      "expectedOutput": "25"
     },
     {
-      "input": "-2\n5",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "-3\n5",
-      "expectedOutput": "2"
+      "input": "50\n5",
+      "expectedOutput": "55"
     }
   ],
   "sqlSchema": null,

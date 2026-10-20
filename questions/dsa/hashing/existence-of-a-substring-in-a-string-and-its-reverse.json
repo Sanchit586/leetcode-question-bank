@@ -68,6 +68,26 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ababababababababababababababababababababababababab\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcdeabcdeabcdeabcdeabcdeedcbaedcbaedcbaedcbaedcba\"",
+      "expectedOutput": "true"
+    },
+    {
       "input": "\"leetcode\"",
       "expectedOutput": "true"
     },
@@ -125,26 +145,6 @@
     },
     {
       "input": "\"aa\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"ab\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"ba\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"aba\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"abba\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"aaaaa\"",
       "expectedOutput": "true"
     }
   ],

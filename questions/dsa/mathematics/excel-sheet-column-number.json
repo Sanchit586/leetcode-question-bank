@@ -69,6 +69,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefg\"",
+      "expectedOutput": "10614840327"
+    },
+    {
+      "input": "\"()()()(\"",
+      "expectedOutput": "-7698638790"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "15702425"
+    },
+    {
+      "input": "\"()()(\"",
+      "expectedOutput": "-11388518"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "15683415"
+    },
+    {
+      "input": "\"ababa\"",
+      "expectedOutput": "15701017"
+    },
+    {
       "input": "\"A\"",
       "expectedOutput": "1"
     },
@@ -113,14 +137,6 @@
       "expectedOutput": "603909"
     },
     {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "15683415"
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "15702425"
-    },
-    {
       "input": "\"edcba\"",
       "expectedOutput": "17565425"
     },
@@ -131,22 +147,6 @@
     {
       "input": "\"aA\"",
       "expectedOutput": "859"
-    },
-    {
-      "input": "\"0\"",
-      "expectedOutput": "-16"
-    },
-    {
-      "input": "\"121\"",
-      "expectedOutput": "-10519"
-    },
-    {
-      "input": "\"racecar\"",
-      "expectedOutput": "15854543248"
-    },
-    {
-      "input": "\"hello\"",
-      "expectedOutput": "18960287"
     }
   ],
   "sqlSchema": null,

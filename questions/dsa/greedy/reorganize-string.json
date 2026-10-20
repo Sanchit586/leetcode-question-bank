@@ -63,6 +63,30 @@
   ],
   "testCases": [
     {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdef\"",
+      "expectedOutput": "\"amamamanananananananananananananananananbnbnbobobobobobobobobobobobobobobobobobococpcpcpcpcpcpcpcpcpcpcpcpcpcpcpcpcpcpcpdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdrererererererererererererererererereresesfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsftftftgtgtgtgtgtgtgtgtgtgtgtgtgtgtgtgtguguguhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhuhvhvhviviviviviviviviviviviviviviviviviwiwiwjwjwjwjwjwjwjwjwjwjwjwjwjwjwjwjwjxjxjxkxkxkxkxkxkxkxkxkxkxkxkxkxkxkxkxkykykylylylylylylylylylylylylylylylylylzlzlzmzmzmzmzmzmzmzmzmzmzmzmzmzmzmzmz\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()\""
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmn\"",
+      "expectedOutput": "\"amamamamamamananananananbnbnbnbnbnbnbobobobobobococococococpcpcpcpcpcpcpdpdpdpdpdqdqdqdqdqdqdqdqeqeqeqerererererererererfrfrfsfsfsfsfsfsfsfsfsfsgsgtgtgtgtgtgtgtgtgtgtgthuhuhuhuhuhuhuhuhuhuhuhviviviviviviviviviviviwiwjwjwjwjwjwjwjwjwjwjxjxjxkxkxkxkxkxkxkxkxkykykykylylylylylylylylzlzlzlzlzmzmzmzmzmzmz\""
+    },
+    {
+      "input": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()\"",
+      "expectedOutput": "\"()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()\""
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\""
+    },
+    {
       "input": "\"aab\"",
       "expectedOutput": "\"aba\""
     },
@@ -117,30 +141,6 @@
     {
       "input": "\"abba\"",
       "expectedOutput": "\"abab\""
-    },
-    {
-      "input": "\"aaaaa\"",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "\"abcde\"",
-      "expectedOutput": "\"adbec\""
-    },
-    {
-      "input": "\"edcba\"",
-      "expectedOutput": "\"ebdac\""
-    },
-    {
-      "input": "\"aA\"",
-      "expectedOutput": "\"aA\""
-    },
-    {
-      "input": "\"0\"",
-      "expectedOutput": "\"0\""
-    },
-    {
-      "input": "\"121\"",
-      "expectedOutput": "\"121\""
     }
   ],
   "sqlSchema": null,
